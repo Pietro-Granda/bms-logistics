@@ -29,12 +29,12 @@ declare module "$app/types" {
 	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
 
 	export interface AppTypes {
-		RouteId(): "/" | "/en" | "/en/about" | "/en/contact" | "/en/operations" | "/en/services" | "/en/solutions" | "/it" | "/it/about" | "/it/contact" | "/it/operations" | "/it/services" | "/it/solutions" | "/pt" | "/pt/about" | "/pt/contact" | "/pt/operations" | "/pt/services" | "/pt/solutions";
+		RouteId(): "/" | "/en" | "/en/about" | "/en/contact" | "/en/operations" | "/en/services" | "/en/solutions" | "/it" | "/it/about" | "/it/contact" | "/it/operations" | "/it/services" | "/it/solutions" | "/pt" | "/pt/about" | "/pt/contact" | "/pt/operations" | "/pt/services" | "/pt/solutions" | "/[...legacy]";
 		RouteParams(): {
-			
+			"/[...legacy]": { legacy: string }
 		};
 		LayoutParams(): {
-			"/": Record<string, never>;
+			"/": { legacy?: string };
 			"/en": Record<string, never>;
 			"/en/about": Record<string, never>;
 			"/en/contact": Record<string, never>;
@@ -52,9 +52,10 @@ declare module "$app/types" {
 			"/pt/contact": Record<string, never>;
 			"/pt/operations": Record<string, never>;
 			"/pt/services": Record<string, never>;
-			"/pt/solutions": Record<string, never>
+			"/pt/solutions": Record<string, never>;
+			"/[...legacy]": { legacy: string }
 		};
-		Pathname(): "/" | "/en" | "/en/about" | "/en/contact" | "/en/operations" | "/en/services" | "/en/solutions" | "/it" | "/it/about" | "/it/contact" | "/it/operations" | "/it/services" | "/it/solutions" | "/pt" | "/pt/about" | "/pt/contact" | "/pt/operations" | "/pt/services" | "/pt/solutions";
+		Pathname(): "/" | "/en" | "/en/about" | "/en/contact" | "/en/operations" | "/en/services" | "/en/solutions" | "/it" | "/it/about" | "/it/contact" | "/it/operations" | "/it/services" | "/it/solutions" | "/pt" | "/pt/about" | "/pt/contact" | "/pt/operations" | "/pt/services" | "/pt/solutions" | `/${string}` & {};
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
 		Asset(): "/assets/css/style.css" | "/assets/images/bms-logo.jpeg" | "/assets/js/main.js" | string & {};
 	}

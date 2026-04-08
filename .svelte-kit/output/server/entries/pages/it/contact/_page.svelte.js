@@ -1,4 +1,4 @@
-import { e as escape_html, b as attr, f as bind_props, i as head, s as stringify } from "../../../../chunks/root.js";
+import { e as escape_html, b as attr, f as bind_props, h as head, s as stringify } from "../../../../chunks/root.js";
 import { R as Reveal } from "../../../../chunks/Reveal.js";
 import "clsx";
 import { b as base } from "../../../../chunks/server.js";

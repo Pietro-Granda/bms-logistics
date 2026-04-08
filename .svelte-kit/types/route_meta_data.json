@@ -56,5 +56,9 @@
 	],
 	"/pt/solutions": [
 		"src/routes/+layout.ts"
+	],
+	"/[...legacy]": [
+		"src/routes/[...legacy]/+page.ts",
+		"src/routes/+layout.ts"
 	]
 }

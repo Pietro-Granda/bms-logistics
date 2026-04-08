@@ -18,6 +18,16 @@
       "_root.js"
     ]
   },
+  "_client.js": {
+    "file": "chunks/client.js",
+    "name": "client",
+    "imports": [
+      "_root.js",
+      "_url.js",
+      "_utils.js",
+      "_exports.js"
+    ]
+  },
   "_environment.js": {
     "file": "chunks/environment.js",
     "name": "environment"
@@ -33,10 +43,8 @@
     "file": "chunks/index.js",
     "name": "index",
     "imports": [
-      "_root.js",
-      "_url.js",
-      "_utils.js",
-      "_exports.js"
+      "_client.js",
+      "_root.js"
     ]
   },
   "_internal.js": {
@@ -157,6 +165,25 @@
       "_server.js",
       "_url.js"
     ]
+  },
+  "src/routes/[...legacy]/+page.svelte": {
+    "file": "entries/pages/_...legacy_/_page.svelte.js",
+    "name": "entries/pages/_...legacy_/_page.svelte",
+    "src": "src/routes/[...legacy]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_client.js",
+      "_url.js",
+      "_root.js",
+      "_utils.js",
+      "_exports.js"
+    ]
+  },
+  "src/routes/[...legacy]/+page.ts": {
+    "file": "entries/pages/_...legacy_/_page.ts.js",
+    "name": "entries/pages/_...legacy_/_page.ts",
+    "src": "src/routes/[...legacy]/+page.ts",
+    "isEntry": true
   },
   "src/routes/en/+page.svelte": {
     "file": "entries/pages/en/_page.svelte.js",

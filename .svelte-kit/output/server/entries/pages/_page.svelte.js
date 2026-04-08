@@ -1,4 +1,4 @@
-import { i as head, b as attr, s as stringify } from "../../chunks/root.js";
+import { h as head, b as attr, s as stringify } from "../../chunks/root.js";
 import { R as Reveal } from "../../chunks/Reveal.js";
 import { b as base } from "../../chunks/server.js";
 import "../../chunks/url.js";
