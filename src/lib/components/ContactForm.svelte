@@ -71,9 +71,17 @@
 			message
 		];
 
-		const mailto = `mailto:boscaratopietro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-			bodyLines.join('\n')
-		)}`;
+		const to = 'boscaratopietro@gmail.com';
+		const encodedBody = encodeURIComponent(bodyLines.join('\n'));
+		const encodedSubject = encodeURIComponent(subject);
+
+		// Prefer Gmail compose (works even when mailto handler is not configured).
+		const gmailCompose = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+			to
+		)}&su=${encodedSubject}&body=${encodedBody}`;
+
+		// Fallback to classic mailto.
+		const mailto = `mailto:${to}?subject=${encodedSubject}&body=${encodedBody}`;
 
 		feedback = {
 			state: 'success',
@@ -85,7 +93,9 @@
 						: "Apro il tuo client email con la richiesta precompilata..."
 		};
 
-		window.location.href = mailto;
+		// Try Gmail first; if blocked or not available, fall back to mailto.
+		const win = window.open(gmailCompose, '_blank', 'noopener,noreferrer');
+		if (!win) window.location.href = mailto;
 	}
 </script>
 

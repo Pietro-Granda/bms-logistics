@@ -1,5 +1,6 @@
 import { e as escape_html, b as attr, f as bind_props, i as head, s as stringify } from "../../../../chunks/root.js";
 import { R as Reveal } from "../../../../chunks/Reveal.js";
+import "clsx";
 import { b as base } from "../../../../chunks/server.js";
 import "../../../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
@@ -66,6 +67,9 @@ function ContactForm($$renderer, $$props) {
     bind_props($$props, { lang });
   });
 }
+function GmailProtocolButton($$renderer) {
+  $$renderer.push(`<div style="display:flex; gap:0.75rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;"><a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">Apri Gmail</a> <small style="color: var(--gray-500); max-width: 70ch;">Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra indirizzi) oppure usa il bottone di invio del form che apre direttamente la schermata di composizione Gmail.</small></div>`);
+}
 function _page($$renderer) {
   head("10s3rq7", $$renderer, ($$renderer2) => {
     $$renderer2.title(($$renderer3) => {
@@ -101,7 +105,9 @@ function _page($$renderer) {
     children: ($$renderer2) => {
       $$renderer2.push(`<div class="form-card"><span class="eyebrow">Modulo richiesta</span> <h2>Raccontaci di cosa ha bisogno la tua operazione.</h2> `);
       ContactForm($$renderer2, { lang: "it" });
-      $$renderer2.push(`<!----> <p class="form-note">Dopo la validazione, si apre una mail precompilata (GitHub Pages non supporta PHP).</p></div>`);
+      $$renderer2.push(`<!----> <p class="form-note">Dopo la validazione, si apre una mail precompilata (GitHub Pages non supporta PHP).</p> `);
+      GmailProtocolButton($$renderer2);
+      $$renderer2.push(`<!----></div>`);
     },
     $$slots: { default: true }
   });
