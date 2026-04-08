@@ -22,6 +22,7 @@
 	let consent = false;
 
 	let feedback: { state: 'idle' | 'error' | 'success'; message: string } = { state: 'idle', message: '' };
+	let hasOpened = false;
 
 	const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 	const phonePattern = /^[+()0-9\s-]{7,}$/;
@@ -43,9 +44,8 @@
 		return true;
 	}
 
-	function onSubmit(event: SubmitEvent) {
-		event.preventDefault();
-
+	function onSubmit() {
+		if (hasOpened) return;
 		if (!validate()) {
 			feedback = {
 				state: 'error',
@@ -93,13 +93,17 @@
 						: "Apro il tuo client email con la richiesta precompilata..."
 		};
 
-		// Try Gmail first; if blocked or not available, fall back to mailto.
+		// Try Gmail first; if blocked, fall back to mailto.
+		hasOpened = true;
 		const win = window.open(gmailCompose, '_blank', 'noopener,noreferrer');
-		if (!win) window.location.href = mailto;
+		if (!win) {
+			const winMailto = window.open(mailto, '_blank', 'noopener,noreferrer');
+			if (!winMailto) window.location.href = mailto;
+		}
 	}
 </script>
 
-<form novalidate onsubmit={onSubmit}>
+<form novalidate on:submit|preventDefault={onSubmit}>
 	<div class="field-grid">
 		<div class="field">
 			<label for="full-name">{lang === 'en' ? 'Full name' : lang === 'pt' ? 'Nome completo' : 'Nome e cognome'}</label>
