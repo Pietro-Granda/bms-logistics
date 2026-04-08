@@ -1,0 +1,336 @@
+import{a as r,f as l}from"../chunks/CwqZEzDW.js";import{i as u}from"../chunks/D3TQRayr.js";import{p as v,f as m,a as f,s as t,r as b}from"../chunks/BloXseR0.js";import{e as y,h as a}from"../chunks/Beri71K9.js";import{h as w}from"../chunks/Bkf3XtcF.js";const S=`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMS Logistics | Integrated Transport, Warehousing and Last Mile</title>
+  <meta name="description" content="BMS Logistics structures transport, warehousing, routing and last mile execution for companies that need operational control, speed and scalable logistics support.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BMS Logistics | Integrated Transport, Warehousing and Last Mile">
+  <meta property="og:description" content="A premium logistics website built to position BMS Logistics as a fast, structured and reliable B2B partner.">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/jpeg" href="../assets/images/bms-logo.jpeg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/main.js"><\/script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BMS Logistics",
+      "description": "Integrated transport, warehousing and last mile logistics services for B2B operations.",
+      "email": "info@bmslogistics.it",
+      "telephone": "+39 349 330 6316",
+      "areaServed": ["Italy", "Europe"],
+      "knowsAbout": ["Last mile delivery", "Transport", "Warehousing", "Routing", "Tracking"]
+    }
+  <\/script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="index.html" aria-label="BMS Logistics home"><img class="brand-logo" src="../assets/images/bms-logo.jpeg" alt="BMS Logistics"></a>
+
+      <div class="header-tools">
+        <div class="language-switcher" role="group" aria-label="Select language"><a class="language-switcher__button" href="../index.html">IT</a><a class="language-switcher__button is-active" href="index.html" aria-current="page">EN</a><a class="language-switcher__button" href="../pt/index.html">PT</a></div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation" data-nav-toggle data-label-open="Open navigation" data-label-close="Close navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="about.html" data-nav-link="about">About</a>
+        <a href="services.html" data-nav-link="services">Services</a>
+        <a href="solutions.html" data-nav-link="solutions">Solutions</a>
+        <a href="operations.html" data-nav-link="operations">Operations</a>
+        <a href="contact.html" data-nav-link="contact">Contact</a>
+        <a class="button button--small button--accent nav-cta" href="contact.html">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--home">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Integrated Transport, Warehousing and Last Mile</span>
+          <h1>Built to move B2B logistics with speed, control and field visibility.</h1>
+          <p>BMS Logistics connects transport, warehousing, routing and final delivery into one operational chain, helping brands and distributors move faster with more structure and less friction.</p>
+          <div class="hero-actions">
+            <a class="button button--accent" href="contact.html">Request a Quote</a>
+            <a class="button button--ghost" href="operations.html">See Operations</a>
+          </div>
+          <ul class="hero-tags" aria-label="Core strengths">
+            <li>Monza and Bernate hubs</li>
+            <li>Routing and tracking visibility</li>
+            <li>Commercial B2B mindset</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <article class="visual-card visual-card--lead">
+            <span class="panel-kicker">Control Tower</span>
+            <h2>One logistics partner for execution that stays readable, scalable and accountable.</h2>
+            <p>From staging and dispatch coordination to route planning and proof of delivery, every step is designed to support operational stability.</p>
+          </article>
+
+          <div class="visual-stack">
+            <article class="mini-card">
+              <span>Transport</span>
+              <strong>Freight movement with direct coordination and service discipline.</strong>
+            </article>
+            <article class="mini-card">
+              <span>Last Mile</span>
+              <strong>Final delivery flows structured for brand experience and timing.</strong>
+            </article>
+            <article class="mini-card">
+              <span>Warehousing</span>
+              <strong>Operational support for staging, storage and outbound release.</strong>
+            </article>
+            <article class="mini-card">
+              <span>Tracking</span>
+              <strong>Clear checkpoints and delivery visibility across the operation.</strong>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-strip">
+      <div class="container metric-grid">
+        <article class="metric-card" data-reveal>
+          <span>Experience</span>
+          <strong>10+</strong>
+          <p>Years of logistics focus supporting transport and delivery operations.</p>
+        </article>
+        <article class="metric-card" data-reveal>
+          <span>Coverage</span>
+          <strong>Italy</strong>
+          <p>National operating capacity with logistics structures ready to scale further.</p>
+        </article>
+        <article class="metric-card" data-reveal>
+          <span>Network</span>
+          <strong>2 hubs</strong>
+          <p>Monza and Bernate operational nodes supporting staging and dispatch.</p>
+        </article>
+        <article class="metric-card" data-reveal>
+          <span>Approach</span>
+          <strong>B2B</strong>
+          <p>Designed for companies that need clarity, responsiveness and execution control.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-layout">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Company Snapshot</span>
+          <h2 class="section-title">A logistics structure made for companies that cannot afford operational noise.</h2>
+          <p class="section-copy">BMS Logistics positions logistics as a competitive system, not just a transport line. The focus is simple: tighter execution, cleaner communication and a more reliable chain from inbound flow to final delivery.</p>
+        </div>
+
+        <article class="detail-panel" data-reveal>
+          <p>BMS Logistics supports businesses that need a logistics partner able to combine operational discipline with commercial responsiveness. That means structured warehousing, dependable transport, routing logic and delivery visibility working together instead of living in separate silos.</p>
+          <ul class="check-list">
+            <li>Integrated transport, warehouse and final-mile thinking</li>
+            <li>Operational workflows designed around real execution constraints</li>
+            <li>Clear communication for procurement, logistics and commercial teams</li>
+            <li>Flexible support for recurring volumes, peaks and custom projects</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-intro section-intro--center" data-reveal>
+          <span class="eyebrow">Core Services</span>
+          <h2 class="section-title">Main service lines built around control, speed and consistency.</h2>
+          <p class="section-copy">Each service is designed to connect into a broader logistics model, allowing BMS Logistics to support companies with both execution capacity and operational logic.</p>
+        </div>
+
+        <div class="grid-cards grid-cards--4">
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Last Mile Delivery</h3>
+            <p>Structured final-mile execution for delivery windows, customer experience and day-to-day visibility.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Transport</h3>
+            <p>Reliable transport flows aligned with dispatch timing, route planning and operational follow-up.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Warehousing</h3>
+            <p>Storage, staging and outbound preparation designed to support real operational throughput.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>E-commerce Logistics</h3>
+            <p>Support for fast-moving online volumes, order flow coordination and delivery chain reliability.</p>
+          </article>
+        </div>
+
+        <div class="section-actions" data-reveal>
+          <a class="button" href="services.html">Explore All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-intro section-intro--center" data-reveal>
+          <span class="eyebrow">Why BMS</span>
+          <h2 class="section-title">Differentials that make the operation feel more structured from day one.</h2>
+          <p class="section-copy">The value is not just in moving goods. It is in making the operation easier to manage, easier to scale and easier to trust.</p>
+        </div>
+
+        <div class="grid-cards grid-cards--4">
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Operational Clarity</h3>
+            <p>Workflows that help teams understand where freight is, what is moving next and what requires attention.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Field-Driven Execution</h3>
+            <p>Processes built around live transport and delivery realities, not generic assumptions.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Flexible Capacity</h3>
+            <p>Adaptable support for standard flows, seasonal pressure and fast-changing operational demand.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true"></span>
+            <h3>Custom Logic</h3>
+            <p>Solutions tailored to routing complexity, handling needs, service levels and client-specific workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container proof-layout">
+        <article class="proof-panel" data-reveal>
+          <span class="eyebrow">Credibility</span>
+          <h2 class="section-title">A logistics footprint that looks real because it is built around operations, not decoration.</h2>
+          <p class="section-copy">BMS Logistics demonstrates credibility through structure: real hubs, integrated services, professional routing, tracking visibility and a commercial approach aligned with B2B expectations.</p>
+
+          <div class="ops-nodes">
+            <div class="node-badge">
+              <div>
+                <span>Monza Hub</span>
+                <strong>Staging and dispatch coordination</strong>
+              </div>
+              <b>North Italy</b>
+            </div>
+            <div class="node-badge">
+              <div>
+                <span>Bernate Hub</span>
+                <strong>Warehouse and route support</strong>
+              </div>
+              <b>Operational</b>
+            </div>
+            <div class="node-badge">
+              <div>
+                <span>Administrative Office</span>
+                <strong>Via Copernico 4, Bolzano</strong>
+              </div>
+              <b>Italy</b>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid-cards grid-cards--2">
+          <article class="card" data-reveal>
+            <h3>Structured service mix</h3>
+            <p>Transport, warehousing, routing and tracking are designed to work as one operating model.</p>
+            <ul>
+              <li>Less fragmentation across providers</li>
+              <li>Cleaner communication between teams</li>
+              <li>Stronger operational oversight</li>
+            </ul>
+          </article>
+          <article class="card" data-reveal>
+            <h3>Designed for partnerships</h3>
+            <p>BMS Logistics is positioned for ongoing B2B relationships, not isolated transactions.</p>
+            <ul>
+              <li>Commercial response with operational depth</li>
+              <li>Custom service scopes and rollout paths</li>
+              <li>Scalable support for growth phases</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <span class="eyebrow">Next Step</span>
+            <h2>Build a logistics setup that can support growth without losing control.</h2>
+            <p>Talk with BMS Logistics about recurring transport, warehousing support, last-mile execution or a custom operational model for your business.</p>
+          </div>
+          <a class="button button--accent" href="contact.html">Start the Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="index.html" aria-label="BMS Logistics home"><img class="brand-logo" src="../assets/images/bms-logo.jpeg" alt="BMS Logistics"></a>
+        <p>BMS Logistics builds transport, warehousing and final-mile operations with a sharper commercial and operational structure.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Navigate</h2>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="operations.html">Operations</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Core Services</h2>
+        <div class="footer-links">
+          <span>Last mile delivery</span>
+          <span>Transport</span>
+          <span>Warehousing</span>
+          <span>Routing and tracking</span>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <div class="footer-links">
+          <a href="tel:+393493306316">+39 349 330 6316</a>
+          <a href="mailto:info@bmslogistics.it">info@bmslogistics.it</a>
+          <a href="mailto:supporto@bmslogistics.it">supporto@bmslogistics.it</a>
+          <span>Monza Hub, Bernate Hub, Bolzano office</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span data-current-year></span> BMS Logistics. All rights reserved.</p>
+      <p>Static architecture ready for cPanel, IONOS and multilingual rollout.</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/393493306316" target="_blank" rel="noreferrer" aria-label="Chat with BMS Logistics on WhatsApp">WhatsApp</a>
+</body>
+</html>
+`;var B=l('<meta name="bms-page" content="home"/>'),k=l('<!> <main id="main-content"></main> <!> <!>',1);function _(c,d){v(d,!1);const n=y(S,{lang:"en"});u();var s=k();w("p07vkg",h=>{var g=B();r(h,g)});var i=m(s);a(i,()=>n.header);var e=t(i,2);a(e,()=>n.main,!0),b(e);var o=t(e,2);a(o,()=>n.footer);var p=t(o,2);a(p,()=>n.whatsapp),r(c,s),f()}export{_ as component};

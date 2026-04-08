@@ -8,10 +8,6 @@ export function langFromPath(pathname: string): Lang {
 	return 'it';
 }
 
-export function langBase(lang: Lang) {
-	return lang === 'it' ? '' : `/${lang}`;
-}
-
 export function hrefFor(lang: Lang, page: PageKey) {
 	if (page === 'home') return lang === 'it' ? '/' : `/${lang}`;
 	return `${lang === 'it' ? '/it' : `/${lang}`}/${page}`;

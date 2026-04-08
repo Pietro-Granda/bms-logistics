@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { langFromPath, hrefFor, langBase, ui, type Lang, type PageKey } from '$lib/site/i18n';
+	import { base } from '$app/paths';
+	import { langFromPath, hrefFor, ui, type Lang, type PageKey } from '$lib/site/i18n';
 
 	const lang: Lang = $derived(langFromPath(page.url.pathname));
 
@@ -39,7 +40,7 @@
 <header class="site-header" class:is-scrolled={scrolled}>
 	<div class="container header-bar">
 		<a class="brand" href={hrefFor(lang, 'home')} aria-label="BMS Logistics">
-			<img class="brand-logo" src="{langBase(lang)}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
+			<img class="brand-logo" src="{base}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
 		</a>
 
 		<div class="header-tools">

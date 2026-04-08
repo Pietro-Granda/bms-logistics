@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { langFromPath, hrefFor, langBase, ui, type Lang } from '$lib/site/i18n';
+	import { base } from '$app/paths';
+	import { langFromPath, hrefFor, ui, type Lang } from '$lib/site/i18n';
 
 	const lang: Lang = langFromPath(page.url.pathname);
 	const year = new Date().getFullYear();
@@ -10,7 +11,7 @@
 	<div class="container footer-grid">
 		<div class="footer-brand">
 			<a class="brand brand--footer" href={hrefFor(lang, 'home')} aria-label="BMS Logistics">
-				<img class="brand-logo" src="{langBase(lang)}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
+				<img class="brand-logo" src="{base}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
 			</a>
 			<p>
 				{#if lang === 'it'}

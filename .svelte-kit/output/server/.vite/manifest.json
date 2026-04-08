@@ -11,6 +11,13 @@
       "_internal.js"
     ]
   },
+  "_Reveal.js": {
+    "file": "chunks/Reveal.js",
+    "name": "Reveal",
+    "imports": [
+      "_renderer.js"
+    ]
+  },
   "_environment.js": {
     "file": "chunks/environment.js",
     "name": "environment"
@@ -19,12 +26,24 @@
     "file": "chunks/exports.js",
     "name": "exports",
     "imports": [
+      "_renderer.js",
       "_root.js"
     ]
   },
+  "_false.js": {
+    "file": "chunks/false.js",
+    "name": "false"
+  },
   "_index.js": {
     "file": "chunks/index.js",
-    "name": "index"
+    "name": "index",
+    "imports": [
+      "_renderer.js",
+      "_url.js",
+      "_root.js",
+      "_utils.js",
+      "_exports.js"
+    ]
   },
   "_internal.js": {
     "file": "chunks/internal.js",
@@ -48,11 +67,19 @@
     "file": "chunks/render-context.js",
     "name": "render-context"
   },
+  "_renderer.js": {
+    "file": "chunks/renderer.js",
+    "name": "renderer",
+    "imports": [
+      "_render-context.js"
+    ]
+  },
   "_root.js": {
     "file": "chunks/root.js",
     "name": "root",
     "imports": [
-      "_render-context.js"
+      "_renderer.js",
+      "_false.js"
     ]
   },
   "_server.js": {
@@ -82,7 +109,7 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_render-context.js",
+      "_false.js",
       "_server.js",
       "_environment.js"
     ]
@@ -93,17 +120,9 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_url.js",
-      "_utils.js",
-      "_exports.js"
+      "_renderer.js",
+      "_index.js"
     ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte": {
-    "file": "entries/fallbacks/layout.svelte.js",
-    "name": "entries/fallbacks/layout.svelte",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte",
-    "isEntry": true
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
     "file": "index.js",
@@ -112,12 +131,28 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_render-context.js",
+      "_false.js",
       "_server.js",
       "_url.js",
       "_utils.js",
       "_exports.js",
       "_internal.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_renderer.js",
+      "_index.js",
+      "_server.js",
+      "_url.js",
+      "_root.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.DflFiA85.css"
     ]
   },
   "src/routes/+layout.ts": {
@@ -132,9 +167,8 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_index.js",
-      "_legacy.js"
+      "_renderer.js",
+      "_Reveal.js"
     ]
   },
   "src/routes/en/+page.svelte": {
@@ -143,7 +177,7 @@
     "src": "src/routes/en/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -153,7 +187,7 @@
     "src": "src/routes/en/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -163,7 +197,7 @@
     "src": "src/routes/en/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -173,7 +207,7 @@
     "src": "src/routes/en/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -183,7 +217,7 @@
     "src": "src/routes/en/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -193,7 +227,7 @@
     "src": "src/routes/en/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -203,8 +237,7 @@
     "src": "src/routes/it/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_index.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -214,7 +247,7 @@
     "src": "src/routes/it/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -224,8 +257,8 @@
     "src": "src/routes/it/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js",
+      "_Reveal.js"
     ]
   },
   "src/routes/it/operations/+page.svelte": {
@@ -234,7 +267,7 @@
     "src": "src/routes/it/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -244,7 +277,7 @@
     "src": "src/routes/it/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -254,7 +287,7 @@
     "src": "src/routes/it/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -264,7 +297,7 @@
     "src": "src/routes/pt/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -274,7 +307,7 @@
     "src": "src/routes/pt/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -284,7 +317,7 @@
     "src": "src/routes/pt/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -294,7 +327,7 @@
     "src": "src/routes/pt/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -304,7 +337,7 @@
     "src": "src/routes/pt/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   },
@@ -314,7 +347,7 @@
     "src": "src/routes/pt/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_legacy.js"
     ]
   }
