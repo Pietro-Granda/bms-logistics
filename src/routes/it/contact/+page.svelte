@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Reveal from '$lib/components/Reveal.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
+	import GmailProtocolButton from '$lib/components/GmailProtocolButton.svelte';
 	import { base } from '$app/paths';
 </script>
 
@@ -70,6 +71,7 @@
 				<h2>Raccontaci di cosa ha bisogno la tua operazione.</h2>
 				<ContactForm lang="it" />
 				<p class="form-note">Dopo la validazione, si apre una mail precompilata (GitHub Pages non supporta PHP).</p>
+				<GmailProtocolButton />
 			</div>
 		</Reveal>
 	</div>
