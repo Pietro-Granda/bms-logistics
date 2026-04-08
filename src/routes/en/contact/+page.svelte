@@ -75,7 +75,7 @@
 				across Monza and Bernate Ticino.
 			</p>
 		</div>
-		<div class="map-layout" data-reveal>
+		<div class="map-layout map-layout--stacked" data-reveal>
 			<div class="map-embed">
 				<iframe
 					title="BMS Logistics Bolzano office map"

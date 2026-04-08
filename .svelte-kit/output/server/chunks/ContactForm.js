@@ -58,7 +58,7 @@ function ContactForm($$renderer, $$props) {
     {
       $$renderer2.push("<!--[-1-->");
     }
-    $$renderer2.push(`<!--]--></form>`);
+    $$renderer2.push(`<!--]--> <p class="form-note">${escape_html(lang === "en" ? "After validation, we open a pre-filled email in a new tab (GitHub Pages does not run server-side PHP)." : lang === "pt" ? "Depois da validacao, abrimos um email pre-preenchido em uma nova aba (GitHub Pages nao executa PHP no servidor)." : "Dopo la validazione, apriamo un'email precompilata in una nuova scheda (GitHub Pages non esegue PHP lato server).")}</p></form>`);
     bind_props($$props, { lang });
   });
 }

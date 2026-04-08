@@ -709,6 +709,15 @@ body.nav-open .site-nav { opacity: 1; visibility: visible; transform: translateY
 
 .map-layout { display: grid; gap: 1rem; }
 
+/* Contact page: force MAP -> LOCATIONS -> NETWORK vertical flow */
+.map-layout--stacked {
+  grid-template-columns: 1fr;
+}
+
+.map-layout--stacked > * {
+  grid-column: 1 / -1;
+}
+
 .map-embed {
   min-height: 24rem;
   border-radius: var(--radius-lg);

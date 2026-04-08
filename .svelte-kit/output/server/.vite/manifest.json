@@ -179,7 +179,11 @@
       "_server.js",
       "_url.js",
       "_root.js",
-      "_index-server.js"
+      "_index-server.js",
+      "_utils.js",
+      "_exports.js",
+      "_state.svelte.js",
+      "_client.js"
     ],
     "css": [
       "_app/immutable/assets/_layout.DflFiA85.css"
@@ -314,6 +318,9 @@
       "_server.js",
       "_url.js",
       "_root.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.3zY7V8rv.css"
     ]
   },
   "src/routes/it/operations/+page.svelte": {

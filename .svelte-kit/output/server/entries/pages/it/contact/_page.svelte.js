@@ -7,7 +7,8 @@ import "../../../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
 import "../../../../chunks/root.js";
 function GmailProtocolButton($$renderer) {
-  $$renderer.push(`<div style="display:flex; gap:0.75rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;"><a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">Apri Gmail</a> <small style="color: var(--gray-500); max-width: 70ch;">Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra indirizzi) oppure usa il bottone di invio del form che apre direttamente la schermata di composizione Gmail.</small></div>`);
+  $$renderer.push(`<div class="gmail-helper svelte-1pr1t76"><a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">Apri Gmail</a> <p class="form-note gmail-helper__note svelte-1pr1t76">Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra
+		indirizzi). In alternativa, il form apre direttamente la schermata di composizione Gmail.</p></div>`);
 }
 function _page($$renderer) {
   head("10s3rq7", $$renderer, ($$renderer2) => {
@@ -44,7 +45,7 @@ function _page($$renderer) {
     children: ($$renderer2) => {
       $$renderer2.push(`<div class="form-card"><span class="eyebrow">Modulo richiesta</span> <h2>Raccontaci di cosa ha bisogno la tua operazione.</h2> `);
       ContactForm($$renderer2, { lang: "it" });
-      $$renderer2.push(`<!----> <p class="form-note">Dopo la validazione, si apre una mail precompilata (GitHub Pages non supporta PHP).</p> `);
+      $$renderer2.push(`<!----> `);
       GmailProtocolButton($$renderer2);
       $$renderer2.push(`<!----></div>`);
     },
@@ -61,7 +62,7 @@ function _page($$renderer) {
   $$renderer.push(`<!----> `);
   Reveal($$renderer, {
     children: ($$renderer2) => {
-      $$renderer2.push(`<div class="map-layout"><div class="map-embed"><iframe title="Mappa ufficio BMS Logistics Bolzano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Via%20Copernico%204%2C%2039100%20Bolzano%2C%20Italy&amp;output=embed"></iframe></div> <div class="location-grid"><article class="location-card"><small>Ufficio amministrativo</small> <strong>Bolzano</strong> <p>Via Copernico 4, 39100 Bolzano, Italia.</p> <a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Copernico+4%2C+39100+Bolzano%2C+Italy" target="_blank" rel="noreferrer">Apri in Google Maps</a></article> <article class="location-card"><small>Hub operativo</small> <strong>Monza Brianza</strong> <p>Presidio operativo per staging, dispatch e rilascio rotte.</p></article> <article class="location-card"><small>Hub operativo</small> <strong>Bernate Ticino</strong> <p>Supporto warehouse e continuita per la catena logistica.</p></article></div> <div class="network-board" aria-label="Mappa contatti BMS Logistics"><span class="network-line line--1" aria-hidden="true"></span> <span class="network-line line--2" aria-hidden="true"></span> <article class="network-node node--bolzano"><small>Ufficio</small><strong>Bolzano</strong><p>Ufficio amministrativo e contatto centrale.</p></article> <article class="network-node node--monza"><small>Hub</small><strong>Monza</strong><p>Nodo operativo per dispatch e rilascio rotte.</p></article> <article class="network-node node--bernate"><small>Hub</small><strong>Bernate Ticino</strong><p>Supporto di magazzino e continuita per la catena.</p></article></div></div>`);
+      $$renderer2.push(`<div class="map-layout map-layout--stacked"><div class="map-embed"><iframe title="Mappa ufficio BMS Logistics Bolzano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Via%20Copernico%204%2C%2039100%20Bolzano%2C%20Italy&amp;output=embed"></iframe></div> <div class="location-grid"><article class="location-card"><small>Ufficio amministrativo</small> <strong>Bolzano</strong> <p>Via Copernico 4, 39100 Bolzano, Italia.</p> <a href="https://www.google.com/maps/search/?api=1&amp;query=Via+Copernico+4%2C+39100+Bolzano%2C+Italy" target="_blank" rel="noreferrer">Apri in Google Maps</a></article> <article class="location-card"><small>Hub operativo</small> <strong>Monza Brianza</strong> <p>Presidio operativo per staging, dispatch e rilascio rotte.</p></article> <article class="location-card"><small>Hub operativo</small> <strong>Bernate Ticino</strong> <p>Supporto warehouse e continuita per la catena logistica.</p></article></div> <div class="network-board" aria-label="Mappa contatti BMS Logistics"><span class="network-line line--1" aria-hidden="true"></span> <span class="network-line line--2" aria-hidden="true"></span> <article class="network-node node--bolzano"><small>Ufficio</small><strong>Bolzano</strong><p>Ufficio amministrativo e contatto centrale.</p></article> <article class="network-node node--monza"><small>Hub</small><strong>Monza</strong><p>Nodo operativo per dispatch e rilascio rotte.</p></article> <article class="network-node node--bernate"><small>Hub</small><strong>Bernate Ticino</strong><p>Supporto di magazzino e continuita per la catena.</p></article></div></div>`);
     },
     $$slots: { default: true }
   });

@@ -6,6 +6,11 @@ import "@sveltejs/kit/internal/server";
 import "../../chunks/root.js";
 import "clsx";
 import { o as onDestroy } from "../../chunks/index-server.js";
+import "@sveltejs/kit/internal";
+import "../../chunks/utils.js";
+import "../../chunks/exports.js";
+import "../../chunks/state.svelte.js";
+import "../../chunks/client.js";
 function langFromPath(pathname) {
   if (pathname.startsWith("/en")) return "en";
   if (pathname.startsWith("/pt")) return "pt";
@@ -181,8 +186,8 @@ function WhatsAppLink($$renderer, $$props) {
 }
 function RevealsController($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
-    let observer;
-    onDestroy(() => observer?.disconnect());
+    onDestroy(() => {
+    });
   });
 }
 function _layout($$renderer, $$props) {

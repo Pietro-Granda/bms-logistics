@@ -70,7 +70,6 @@
 				<span class="eyebrow">Modulo richiesta</span>
 				<h2>Raccontaci di cosa ha bisogno la tua operazione.</h2>
 				<ContactForm lang="it" />
-				<p class="form-note">Dopo la validazione, si apre una mail precompilata (GitHub Pages non supporta PHP).</p>
 				<GmailProtocolButton />
 			</div>
 		</Reveal>
@@ -92,7 +91,7 @@
 			</div>
 		</Reveal>
 		<Reveal>
-			<div class="map-layout">
+			<div class="map-layout map-layout--stacked">
 				<div class="map-embed">
 					<iframe
 						title="Mappa ufficio BMS Logistics Bolzano"

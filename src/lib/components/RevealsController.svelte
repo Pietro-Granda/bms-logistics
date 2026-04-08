@@ -1,10 +1,15 @@
 <script lang="ts">
+	import { afterNavigate } from '$app/navigation';
+	import { page } from '$app/state';
 	import { onDestroy, onMount } from 'svelte';
 
 	let observer: IntersectionObserver | undefined;
+	let unsubscribeAfterNavigate: (() => void) | undefined;
 
-	onMount(() => {
-		const elements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
+	function scan() {
+		const elements = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]')).filter(
+			(el) => !el.classList.contains('is-visible')
+		);
 		if (!elements.length) return;
 
 		if (!('IntersectionObserver' in window)) {
@@ -12,6 +17,7 @@
 			return;
 		}
 
+		observer?.disconnect();
 		observer = new IntersectionObserver(
 			(entries) => {
 				for (const entry of entries) {
@@ -24,8 +30,24 @@
 		);
 
 		elements.forEach((el) => observer?.observe(el));
+	}
+
+	onMount(() => {
+		// Initial scan + rescan after every client-side navigation.
+		scan();
+		unsubscribeAfterNavigate = afterNavigate(() => scan());
+
+		// Also rescan when URL changes (covers some edge cases).
+		// Accessing page.url.pathname makes this reactive in Svelte 5.
+		$effect(() => {
+			page.url.pathname;
+			queueMicrotask(() => scan());
+		});
 	});
 
-	onDestroy(() => observer?.disconnect());
+	onDestroy(() => {
+		unsubscribeAfterNavigate?.();
+		observer?.disconnect();
+	});
 </script>
 

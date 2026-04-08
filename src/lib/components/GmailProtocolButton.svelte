@@ -4,12 +4,26 @@
 	// Gmail (mail.google.com) direttamente dal tuo sito.
 </script>
 
-<div style="display:flex; gap:0.75rem; align-items:flex-start; flex-wrap:wrap; margin-top:0.75rem;">
-	<a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">
-		Apri Gmail
-	</a>
-	<small style="color: var(--gray-500); max-width: 70ch;">
-		Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra indirizzi) oppure usa il bottone di invio del form che apre direttamente la schermata di composizione Gmail.
-	</small>
+<div class="gmail-helper">
+	<a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">Apri Gmail</a>
+	<p class="form-note gmail-helper__note">
+		Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra
+		indirizzi). In alternativa, il form apre direttamente la schermata di composizione Gmail.
+	</p>
 </div>
+
+<style>
+	.gmail-helper {
+		display: flex;
+		gap: 0.75rem;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 0.75rem;
+	}
+
+	.gmail-helper__note {
+		margin-top: 0;
+		max-width: 70ch;
+	}
+</style>
 
