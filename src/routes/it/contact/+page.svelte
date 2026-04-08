@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Reveal from '$lib/components/Reveal.svelte';
 	import ContactForm from '$lib/components/ContactForm.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -16,7 +17,7 @@
 		<Reveal>
 			<div>
 				<nav class="breadcrumbs" aria-label="Percorso">
-					<a href="/">Home</a>
+					<a href="{base}/">Home</a>
 					<span class="separator" aria-hidden="true"></span>
 					<span>Contatti</span>
 				</nav>

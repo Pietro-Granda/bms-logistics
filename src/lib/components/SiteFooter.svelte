@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { base } from '$app/paths';
-	import { langFromPath, hrefFor, ui, type Lang } from '$lib/site/i18n';
+	import { langFromPath, hrefWithBase, ui, type Lang } from '$lib/site/i18n';
 
 	const lang: Lang = langFromPath(page.url.pathname);
 	const year = new Date().getFullYear();
@@ -10,7 +10,7 @@
 <footer class="site-footer">
 	<div class="container footer-grid">
 		<div class="footer-brand">
-			<a class="brand brand--footer" href={hrefFor(lang, 'home')} aria-label="BMS Logistics">
+			<a class="brand brand--footer" href={hrefWithBase(base, lang, 'home')} aria-label="BMS Logistics">
 				<img class="brand-logo" src="{base}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
 			</a>
 			<p>
@@ -30,11 +30,11 @@
 		<div>
 			<h2 class="footer-title">{ui[lang].footer.navigate}</h2>
 			<div class="footer-links">
-				<a href={hrefFor(lang, 'about')}>{ui[lang].nav.about}</a>
-				<a href={hrefFor(lang, 'services')}>{ui[lang].nav.services}</a>
-				<a href={hrefFor(lang, 'solutions')}>{ui[lang].nav.solutions}</a>
-				<a href={hrefFor(lang, 'operations')}>{ui[lang].nav.operations}</a>
-				<a href={hrefFor(lang, 'contact')}>{ui[lang].nav.contact}</a>
+				<a href={hrefWithBase(base, lang, 'about')}>{ui[lang].nav.about}</a>
+				<a href={hrefWithBase(base, lang, 'services')}>{ui[lang].nav.services}</a>
+				<a href={hrefWithBase(base, lang, 'solutions')}>{ui[lang].nav.solutions}</a>
+				<a href={hrefWithBase(base, lang, 'operations')}>{ui[lang].nav.operations}</a>
+				<a href={hrefWithBase(base, lang, 'contact')}>{ui[lang].nav.contact}</a>
 			</div>
 		</div>
 

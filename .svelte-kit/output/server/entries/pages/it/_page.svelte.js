@@ -1,4 +1,4 @@
-import { h as head } from "../../../chunks/renderer.js";
+import { i as head } from "../../../chunks/root.js";
 import { e as extractLegacyPage, h as html } from "../../../chunks/legacy.js";
 const raw = `<!DOCTYPE html>
 <html lang="it">

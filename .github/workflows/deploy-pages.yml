@@ -32,7 +32,7 @@ jobs:
         env:
           # If you publish as a *project* site, set this to "/<repo-name>"
           # Example: "/BMS-Logistics"
-          BASE_PATH: ""
+          BASE_PATH: "/bms-logistics"
         run: npm run build
 
       - name: Upload artifact

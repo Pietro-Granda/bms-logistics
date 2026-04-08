@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { base } from '$app/paths';
-	import { langFromPath, hrefFor, ui, type Lang, type PageKey } from '$lib/site/i18n';
+	import { langFromPath, hrefWithBase, ui, type Lang, type PageKey } from '$lib/site/i18n';
 
 	const lang: Lang = $derived(langFromPath(page.url.pathname));
 
@@ -39,7 +39,7 @@
 
 <header class="site-header" class:is-scrolled={scrolled}>
 	<div class="container header-bar">
-		<a class="brand" href={hrefFor(lang, 'home')} aria-label="BMS Logistics">
+		<a class="brand" href={hrefWithBase(base, lang, 'home')} aria-label="BMS Logistics">
 			<img class="brand-logo" src="{base}/assets/images/bms-logo.jpeg" alt="BMS Logistics" />
 		</a>
 
@@ -48,21 +48,21 @@
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'it'}
-					href="/"
+					href="{base}/"
 					aria-current={lang === 'it' ? 'page' : undefined}
 					>IT</a
 				>
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'en'}
-					href="/en"
+					href="{base}/en"
 					aria-current={lang === 'en' ? 'page' : undefined}
 					>EN</a
 				>
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'pt'}
-					href="/pt"
+					href="{base}/pt"
 					aria-current={lang === 'pt' ? 'page' : undefined}
 					>PT</a
 				>
@@ -90,13 +90,13 @@
 			data-nav
 			class:is-open={navOpen}
 		>
-			<a class:is-current={current === 'home'} href={hrefFor(lang, 'home')}>{ui[lang].nav.home}</a>
-			<a class:is-current={current === 'about'} href={hrefFor(lang, 'about')}>{ui[lang].nav.about}</a>
-			<a class:is-current={current === 'services'} href={hrefFor(lang, 'services')}>{ui[lang].nav.services}</a>
-			<a class:is-current={current === 'solutions'} href={hrefFor(lang, 'solutions')}>{ui[lang].nav.solutions}</a>
-			<a class:is-current={current === 'operations'} href={hrefFor(lang, 'operations')}>{ui[lang].nav.operations}</a>
-			<a class:is-current={current === 'contact'} href={hrefFor(lang, 'contact')}>{ui[lang].nav.contact}</a>
-			<a class="button button--small button--accent nav-cta" href={hrefFor(lang, 'contact')}
+			<a class:is-current={current === 'home'} href={hrefWithBase(base, lang, 'home')}>{ui[lang].nav.home}</a>
+			<a class:is-current={current === 'about'} href={hrefWithBase(base, lang, 'about')}>{ui[lang].nav.about}</a>
+			<a class:is-current={current === 'services'} href={hrefWithBase(base, lang, 'services')}>{ui[lang].nav.services}</a>
+			<a class:is-current={current === 'solutions'} href={hrefWithBase(base, lang, 'solutions')}>{ui[lang].nav.solutions}</a>
+			<a class:is-current={current === 'operations'} href={hrefWithBase(base, lang, 'operations')}>{ui[lang].nav.operations}</a>
+			<a class:is-current={current === 'contact'} href={hrefWithBase(base, lang, 'contact')}>{ui[lang].nav.contact}</a>
+			<a class="button button--small button--accent nav-cta" href={hrefWithBase(base, lang, 'contact')}
 				>{ui[lang].nav.cta}</a
 			>
 		</nav>

@@ -1,5 +1,8 @@
-import { h as head } from "../../chunks/renderer.js";
+import { i as head, b as attr, s as stringify } from "../../chunks/root.js";
 import { R as Reveal } from "../../chunks/Reveal.js";
+import { b as base } from "../../chunks/server.js";
+import "../../chunks/url.js";
+import "@sveltejs/kit/internal/server";
 function _page($$renderer) {
   head("1uha8ag", $$renderer, ($$renderer2) => {
     $$renderer2.title(($$renderer3) => {
@@ -23,7 +26,7 @@ function _page($$renderer) {
   Reveal($$renderer, {
     children: ($$renderer2) => {
       $$renderer2.push(`<div class="hero-copy"><span class="eyebrow">Trasporto integrato, magazzino e last mile</span> <h1>Pensata per muovere la logistica B2B con velocita, controllo e visibilita sul campo.</h1> <p>BMS Logistics collega trasporto, warehousing, routing e consegna finale in un'unica catena operativa,
-					aiutando brand e distributori a muoversi piu velocemente con piu struttura e meno attrito.</p> <div class="hero-actions"><a class="button button--accent" href="/it/contact">Richiedi un preventivo</a> <a class="button button--ghost" href="/it/operations">Scopri l'operativita</a></div> <ul class="hero-tags" aria-label="Punti di forza principali"><li>Hub di Monza e Bernate</li> <li>Visibilita su routing e tracking</li> <li>Mentalita commerciale B2B</li></ul></div>`);
+					aiutando brand e distributori a muoversi piu velocemente con piu struttura e meno attrito.</p> <div class="hero-actions"><a class="button button--accent"${attr("href", `${stringify(base)}/it/contact`)}>Richiedi un preventivo</a> <a class="button button--ghost"${attr("href", `${stringify(base)}/it/operations`)}>Scopri l'operativita</a></div> <ul class="hero-tags" aria-label="Punti di forza principali"><li>Hub di Monza e Bernate</li> <li>Visibilita su routing e tracking</li> <li>Mentalita commerciale B2B</li></ul></div>`);
     },
     $$slots: { default: true }
   });

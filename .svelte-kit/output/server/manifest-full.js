@@ -6,11 +6,11 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "_app",
+	appPath: "bms-logistics/_app",
 	assets: new Set(["assets/css/style.css","assets/images/bms-logo.jpeg","assets/js/main.js"]),
 	mimeTypes: {".css":"text/css",".jpeg":"image/jpeg",".js":"text/javascript"},
 	_: {
-		client: {start:"_app/immutable/entry/start.DY3obp5W.js",app:"_app/immutable/entry/app.DDMC7KDJ.js",imports:["_app/immutable/entry/start.DY3obp5W.js","_app/immutable/chunks/BHQOfGUj.js","_app/immutable/chunks/BloXseR0.js","_app/immutable/chunks/D229U804.js","_app/immutable/entry/app.DDMC7KDJ.js","_app/immutable/chunks/BloXseR0.js","_app/immutable/chunks/BpDke59Y.js","_app/immutable/chunks/CwqZEzDW.js","_app/immutable/chunks/DYV8BFW9.js","_app/immutable/chunks/dPunk7i_.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: null,
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

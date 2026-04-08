@@ -1,4 +1,4 @@
-import { i as ssr_context, a as attr_class, j as slot } from "./renderer.js";
+import { j as ssr_context, a as attr_class, k as slot } from "./root.js";
 import "clsx";
 function onDestroy(fn) {
   /** @type {SSRContext} */

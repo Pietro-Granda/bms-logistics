@@ -1,5 +1,8 @@
-import { e as escape_html, b as attr, f as bind_props, h as head } from "../../../../chunks/renderer.js";
+import { e as escape_html, b as attr, f as bind_props, i as head, s as stringify } from "../../../../chunks/root.js";
 import { R as Reveal } from "../../../../chunks/Reveal.js";
+import { b as base } from "../../../../chunks/server.js";
+import "../../../../chunks/url.js";
+import "@sveltejs/kit/internal/server";
 function ContactForm($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let lang = $$props["lang"];
@@ -73,7 +76,7 @@ function _page($$renderer) {
   $$renderer.push(`<section class="page-hero"><div class="container hero-grid">`);
   Reveal($$renderer, {
     children: ($$renderer2) => {
-      $$renderer2.push(`<div><nav class="breadcrumbs" aria-label="Percorso"><a href="/">Home</a> <span class="separator" aria-hidden="true"></span> <span>Contatti</span></nav> <span class="eyebrow">Contatta BMS Logistics</span> <h1>Avvia una conversazione logistica costruita su esigenze operative reali.</h1> <p>Usa il modulo qui sotto per richiedere un preventivo, discutere l'ambito del servizio o iniziare una
+      $$renderer2.push(`<div><nav class="breadcrumbs" aria-label="Percorso"><a${attr("href", `${stringify(base)}/`)}>Home</a> <span class="separator" aria-hidden="true"></span> <span>Contatti</span></nav> <span class="eyebrow">Contatta BMS Logistics</span> <h1>Avvia una conversazione logistica costruita su esigenze operative reali.</h1> <p>Usa il modulo qui sotto per richiedere un preventivo, discutere l'ambito del servizio o iniziare una
 					conversazione di partnership logistica. Per un contatto immediato, raggiungi il team direttamente via
 					telefono, email o WhatsApp.</p></div>`);
     },

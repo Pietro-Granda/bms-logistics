@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Reveal from '$lib/components/Reveal.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -43,8 +44,8 @@
 					aiutando brand e distributori a muoversi piu velocemente con piu struttura e meno attrito.
 				</p>
 				<div class="hero-actions">
-					<a class="button button--accent" href="/it/contact">Richiedi un preventivo</a>
-					<a class="button button--ghost" href="/it/operations">Scopri l'operativita</a>
+					<a class="button button--accent" href="{base}/it/contact">Richiedi un preventivo</a>
+					<a class="button button--ghost" href="{base}/it/operations">Scopri l'operativita</a>
 				</div>
 				<ul class="hero-tags" aria-label="Punti di forza principali">
 					<li>Hub di Monza e Bernate</li>

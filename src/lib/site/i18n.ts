@@ -13,6 +13,13 @@ export function hrefFor(lang: Lang, page: PageKey) {
 	return `${lang === 'it' ? '/it' : `/${lang}`}/${page}`;
 }
 
+export function hrefWithBase(base: string, lang: Lang, page: PageKey) {
+	const path = hrefFor(lang, page);
+	if (!base) return path;
+	if (path === '/') return `${base}/`;
+	return `${base}${path}`;
+}
+
 export const ui = {
 	it: {
 		skip: 'Vai al contenuto',

@@ -1,8 +1,7 @@
 import "clsx";
-import { n as noop, g as getContext } from "./renderer.js";
+import { n as noop, g as getContext } from "./root.js";
 import "./url.js";
 import "@sveltejs/kit/internal/server";
-import "./root.js";
 import "@sveltejs/kit/internal";
 import "./utils.js";
 import { w as writable } from "./exports.js";
