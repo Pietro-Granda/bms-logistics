@@ -1,0 +1,321 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_environment.js",
+      "_server.js",
+      "_internal.js"
+    ]
+  },
+  "_environment.js": {
+    "file": "chunks/environment.js",
+    "name": "environment"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports",
+    "imports": [
+      "_root.js"
+    ]
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_root.js",
+      "_environment.js",
+      "_server.js"
+    ]
+  },
+  "_legacy.js": {
+    "file": "chunks/legacy.js",
+    "name": "legacy",
+    "imports": [
+      "_server.js",
+      "_url.js",
+      "_root.js"
+    ]
+  },
+  "_render-context.js": {
+    "file": "chunks/render-context.js",
+    "name": "render-context"
+  },
+  "_root.js": {
+    "file": "chunks/root.js",
+    "name": "root",
+    "imports": [
+      "_render-context.js"
+    ]
+  },
+  "_server.js": {
+    "file": "chunks/server.js",
+    "name": "server"
+  },
+  "_shared.js": {
+    "file": "chunks/shared.js",
+    "name": "shared",
+    "imports": [
+      "_utils.js",
+      "_render-context.js"
+    ]
+  },
+  "_url.js": {
+    "file": "chunks/url.js",
+    "name": "url"
+  },
+  "_utils.js": {
+    "file": "chunks/utils.js",
+    "name": "utils"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_shared.js",
+      "_render-context.js",
+      "_server.js",
+      "_environment.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_url.js",
+      "_utils.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "name": "entries/fallbacks/layout.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/layout.svelte",
+    "isEntry": true
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_shared.js",
+      "_render-context.js",
+      "_server.js",
+      "_url.js",
+      "_utils.js",
+      "_exports.js",
+      "_internal.js"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "name": "entries/pages/_layout.ts",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_index.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/+page.svelte": {
+    "file": "entries/pages/en/_page.svelte.js",
+    "name": "entries/pages/en/_page.svelte",
+    "src": "src/routes/en/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/about/+page.svelte": {
+    "file": "entries/pages/en/about/_page.svelte.js",
+    "name": "entries/pages/en/about/_page.svelte",
+    "src": "src/routes/en/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/contact/+page.svelte": {
+    "file": "entries/pages/en/contact/_page.svelte.js",
+    "name": "entries/pages/en/contact/_page.svelte",
+    "src": "src/routes/en/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/operations/+page.svelte": {
+    "file": "entries/pages/en/operations/_page.svelte.js",
+    "name": "entries/pages/en/operations/_page.svelte",
+    "src": "src/routes/en/operations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/services/+page.svelte": {
+    "file": "entries/pages/en/services/_page.svelte.js",
+    "name": "entries/pages/en/services/_page.svelte",
+    "src": "src/routes/en/services/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/en/solutions/+page.svelte": {
+    "file": "entries/pages/en/solutions/_page.svelte.js",
+    "name": "entries/pages/en/solutions/_page.svelte",
+    "src": "src/routes/en/solutions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/+page.svelte": {
+    "file": "entries/pages/it/_page.svelte.js",
+    "name": "entries/pages/it/_page.svelte",
+    "src": "src/routes/it/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_index.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/about/+page.svelte": {
+    "file": "entries/pages/it/about/_page.svelte.js",
+    "name": "entries/pages/it/about/_page.svelte",
+    "src": "src/routes/it/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/contact/+page.svelte": {
+    "file": "entries/pages/it/contact/_page.svelte.js",
+    "name": "entries/pages/it/contact/_page.svelte",
+    "src": "src/routes/it/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/operations/+page.svelte": {
+    "file": "entries/pages/it/operations/_page.svelte.js",
+    "name": "entries/pages/it/operations/_page.svelte",
+    "src": "src/routes/it/operations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/services/+page.svelte": {
+    "file": "entries/pages/it/services/_page.svelte.js",
+    "name": "entries/pages/it/services/_page.svelte",
+    "src": "src/routes/it/services/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/it/solutions/+page.svelte": {
+    "file": "entries/pages/it/solutions/_page.svelte.js",
+    "name": "entries/pages/it/solutions/_page.svelte",
+    "src": "src/routes/it/solutions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/+page.svelte": {
+    "file": "entries/pages/pt/_page.svelte.js",
+    "name": "entries/pages/pt/_page.svelte",
+    "src": "src/routes/pt/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/about/+page.svelte": {
+    "file": "entries/pages/pt/about/_page.svelte.js",
+    "name": "entries/pages/pt/about/_page.svelte",
+    "src": "src/routes/pt/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/contact/+page.svelte": {
+    "file": "entries/pages/pt/contact/_page.svelte.js",
+    "name": "entries/pages/pt/contact/_page.svelte",
+    "src": "src/routes/pt/contact/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/operations/+page.svelte": {
+    "file": "entries/pages/pt/operations/_page.svelte.js",
+    "name": "entries/pages/pt/operations/_page.svelte",
+    "src": "src/routes/pt/operations/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/services/+page.svelte": {
+    "file": "entries/pages/pt/services/_page.svelte.js",
+    "name": "entries/pages/pt/services/_page.svelte",
+    "src": "src/routes/pt/services/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  },
+  "src/routes/pt/solutions/+page.svelte": {
+    "file": "entries/pages/pt/solutions/_page.svelte.js",
+    "name": "entries/pages/pt/solutions/_page.svelte",
+    "src": "src/routes/pt/solutions/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_root.js",
+      "_legacy.js"
+    ]
+  }
+}
