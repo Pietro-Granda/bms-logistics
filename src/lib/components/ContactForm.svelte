@@ -71,7 +71,7 @@
 			message
 		];
 
-		const mailto = `mailto:info@bmslogistics.it?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+		const mailto = `mailto:boscaratopietro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
 			bodyLines.join('\n')
 		)}`;
 

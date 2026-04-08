@@ -1,0 +1,199 @@
+import { i as head } from "../../../../chunks/root.js";
+import { e as extractLegacyPage, h as html } from "../../../../chunks/legacy.js";
+const raw = `<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servizi | BMS Logistics Portafoglio di servizi integrati</title>
+  <meta name="description" content="Esplora il portafoglio servizi di BMS Logistics: last mile delivery, trasporto, magazzino, logistica e-commerce, driver, routing, tracking e soluzioni logistiche personalizzate.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Servizi | BMS Logistics">
+  <meta property="og:description" content="Una vista dettagliata dello stack di servizi BMS Logistics per operazioni moderne di logistica e trasporto.">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/jpeg" href="../assets/images/bms-logo.jpeg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script defer src="../assets/js/main.js"><\/script>
+</head>
+<body data-page="services">
+  <a class="skip-link" href="#main-content">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="container header-bar">
+      <a class="brand" href="../index.html" aria-label="Homepage BMS Logistics"><img class="brand-logo" src="../assets/images/bms-logo.jpeg" alt="BMS Logistics"></a>
+      <div class="header-tools">
+        <div class="language-switcher" role="group" aria-label="Seleziona lingua"><a class="language-switcher__button is-active" href="services.html" aria-current="page">IT</a><a class="language-switcher__button" href="../en/services.html">EN</a><a class="language-switcher__button" href="../pt/services.html">PT</a></div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Apri navigazione" data-nav-toggle data-label-open="Apri navigazione" data-label-close="Chiudi navigazione">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="site-nav" id="site-navigation" aria-label="Navigazione principale" data-nav>
+        <a href="../index.html" data-nav-link="home">Home</a>
+        <a href="about.html" data-nav-link="about">Chi siamo</a>
+        <a href="services.html" data-nav-link="services">Servizi</a>
+        <a href="solutions.html" data-nav-link="solutions">Soluzioni</a>
+        <a href="operations.html" data-nav-link="operations">Operativita</a>
+        <a href="contact.html" data-nav-link="contact">Contatti</a>
+        <a class="button button--small button--accent nav-cta" href="contact.html">Richiedi un preventivo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div data-reveal>
+          <nav class="breadcrumbs" aria-label="Percorso">
+            <a href="../index.html">Home</a>
+            <span class="separator" aria-hidden="true"></span>
+            <span>Servizi</span>
+          </nav>
+          <span class="eyebrow">Portafoglio servizi</span>
+          <h1>Servizi logistici dettagliati progettati per sostenere operazioni B2B complesse.</h1>
+          <p>BMS Logistics combina esecuzione del trasporto, supporto di magazzino, coordinamento driver, tracking e progettazione di servizi custom per aiutare le aziende a gestire la logistica con piu controllo e meno frammentazione.</p>
+        </div>
+
+        <aside class="hero-panel" data-reveal>
+          <span class="panel-kicker">Incluso</span>
+          <h2>Linee di servizio che si collegano in un'unica catena operativa.</h2>
+          <ul class="hero-panel-list">
+            <li><strong>Esecuzione</strong><span>Trasporto, consegna e magazzino</span></li>
+            <li><strong>Coordinamento</strong><span>Driver, routing e controllo del dispatch</span></li>
+            <li><strong>Visibilita</strong><span>Tracking e logica di reporting operativo</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-intro section-intro--center" data-reveal>
+          <span class="eyebrow">Servizi dettagliati</span>
+          <h2 class="section-title">Dal magazzino alla consegna finale, ogni servizio e costruito per rafforzare la catena.</h2>
+        </div>
+
+        <div class="grid-cards grid-cards--3">
+          <article class="card" data-reveal><h3>Last Mile Delivery</h3><p>Consegna finale strutturata per puntualita, qualita della comunicazione ed esperienza cliente coerente.</p></article>
+          <article class="card" data-reveal><h3>Trasporto</h3><p>Servizi di trasporto affidabili per rotte pianificate, carichi ricorrenti e movimentazioni operative sensibili.</p></article>
+          <article class="card" data-reveal><h3>Logistica integrata</h3><p>Supporto connesso tra inbound, stoccaggio, dispatch e coordinamento della consegna.</p></article>
+          <article class="card" data-reveal><h3>E-commerce</h3><p>Supporto esecutivo per flussi ordini online, turnaround piu rapido e affidabilita in consegna anche sotto pressione.</p></article>
+          <article class="card" data-reveal><h3>Driver</h3><p>Coordinamento professionale degli autisti allineato a route planning, standard di servizio ed esigenze esecutive quotidiane.</p></article>
+          <article class="card" data-reveal><h3>Magazzino</h3><p>Supporto operativo per stoccaggio, staging, picking e preparazione outbound.</p></article>
+          <article class="card" data-reveal><h3>Routing</h3><p>Progettazione delle rotte e della sequenza consegne per migliorare efficienza, tempi e coerenza del servizio.</p></article>
+          <article class="card" data-reveal><h3>Tracking</h3><p>Checkpoint operativi e visibilita di stato che aiutano i team a monitorare l'esecuzione in tempo reale.</p></article>
+          <article class="card" data-reveal><h3>Soluzioni personalizzate</h3><p>Modelli di servizio su misura per clienti con esigenze specifiche di handling, distribuzione o rollout.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split-layout">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Logica di servizio</span>
+          <h2 class="section-title">I servizi sono progettati per lavorare insieme, non per restare bloccati in workflow separati.</h2>
+          <p class="section-copy">Il valore operativo cresce quando consegna, routing, stoccaggio e comunicazione si rafforzano a vicenda. Per questo BMS Logistics tratta la progettazione del servizio come un sistema connesso.</p>
+        </div>
+
+        <article class="detail-panel" data-reveal>
+          <ul class="check-list">
+            <li>Prontezza del magazzino collegata al dispatch outbound</li>
+            <li>Logica delle rotte allineata alle aspettative di servizio</li>
+            <li>Coordinamento dei driver connesso alla qualita della consegna</li>
+            <li>Visibilita tracking a supporto della fiducia commerciale</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-intro section-intro--center" data-reveal>
+          <span class="eyebrow">Come funziona</span>
+          <h2 class="section-title">Un flusso operativo chiaro dalla scoperta iniziale all'esecuzione quotidiana.</h2>
+        </div>
+
+        <ol class="flow-list">
+          <li data-reveal><span class="flow-step">01</span><div><h3>Analisi operativa</h3><p>Mappatura di volumi, esigenze di magazzino, vincoli di servizio e aspettative di visibilita.</p></div></li>
+          <li data-reveal><span class="flow-step">02</span><div><h3>Progettazione del servizio</h3><p>Definizione del mix corretto tra trasporto, magazzino, routing, driver e supporto tracking.</p></div></li>
+          <li data-reveal><span class="flow-step">03</span><div><h3>Impostazione esecutiva</h3><p>Allineamento di hub, workflow, checkpoint di comunicazione e responsabilita operative.</p></div></li>
+          <li data-reveal><span class="flow-step">04</span><div><h3>Erogazione continua</h3><p>Gestione dell'operazione con supervisione strutturata, adattamento flessibile e supporto scalabile.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <div>
+            <span class="eyebrow">Passo commerciale</span>
+            <h2>Hai bisogno di una proposta su misura invece di un pacchetto logistico generico?</h2>
+            <p>BMS Logistics puo strutturare un mix di servizi attorno al tuo modello reale di consegna, alle esigenze di magazzino e alla complessita del routing.</p>
+          </div>
+          <a class="button button--accent" href="contact.html">Richiedi una proposta di servizio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="../index.html" aria-label="Homepage BMS Logistics"><img class="brand-logo" src="../assets/images/bms-logo.jpeg" alt="BMS Logistics"></a>
+        <p>BMS Logistics costruisce operazioni di trasporto, magazzino e ultimo miglio con una struttura commerciale e operativa piu solida.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Naviga</h2>
+        <div class="footer-links">
+          <a href="about.html">Chi siamo</a>
+          <a href="services.html">Servizi</a>
+          <a href="solutions.html">Soluzioni</a>
+          <a href="operations.html">Operativita</a>
+          <a href="contact.html">Contatti</a>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Servizi chiave</h2>
+        <div class="footer-links">
+          <span>Last mile delivery</span>
+          <span>Trasporto</span>
+          <span>Magazzino</span>
+          <span>Routing e tracking</span>
+        </div>
+      </div>
+      <div>
+        <h2 class="footer-title">Contatti</h2>
+        <div class="footer-links">
+          <a href="tel:+393493306316">+39 349 330 6316</a>
+          <a href="mailto:info@bmslogistics.it">info@bmslogistics.it</a>
+          <a href="mailto:supporto@bmslogistics.it">supporto@bmslogistics.it</a>
+          <span>Hub di Monza, Hub di Bernate, ufficio di Bolzano</span>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-current-year></span> BMS Logistics. Tutti i diritti riservati.</p>
+      <p>Architettura statica pronta per cPanel, IONOS e rollout multilingua.</p>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/393493306316" target="_blank" rel="noreferrer" aria-label="Chatta con BMS Logistics su WhatsApp">WhatsApp</a>
+</body>
+</html>
+`;
+function _page($$renderer, $$props) {
+  $$renderer.component(($$renderer2) => {
+    const page = extractLegacyPage(raw, { lang: "it" });
+    head("1g7zucd", $$renderer2, ($$renderer3) => {
+      $$renderer3.push(`<meta name="bms-page" content="services"/>`);
+    });
+    $$renderer2.push(`${html(page.main)}`);
+  });
+}
+export {
+  _page as default
+};
