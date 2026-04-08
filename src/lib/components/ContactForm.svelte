@@ -44,6 +44,23 @@
 		return true;
 	}
 
+	function openBlank(url: string) {
+		// Ensure we *only* attempt opening a new tab/window; never navigate the current page.
+		const win = window.open(url, '_blank', 'noopener,noreferrer');
+		if (win) return true;
+
+		// Fallback: anchor click can succeed in some popup-blocker cases.
+		const a = document.createElement('a');
+		a.href = url;
+		a.target = '_blank';
+		a.rel = 'noopener noreferrer';
+		a.style.display = 'none';
+		document.body.appendChild(a);
+		a.click();
+		a.remove();
+		return true;
+	}
+
 	function onSubmit() {
 		if (hasOpened) return;
 		if (!validate()) {
@@ -93,13 +110,10 @@
 						: "Apro il tuo client email con la richiesta precompilata..."
 		};
 
-		// Try Gmail first; if blocked, fall back to mailto.
+		// Try Gmail first; then fall back to mailto. Never open in the current tab.
 		hasOpened = true;
-		const win = window.open(gmailCompose, '_blank', 'noopener,noreferrer');
-		if (!win) {
-			const winMailto = window.open(mailto, '_blank', 'noopener,noreferrer');
-			if (!winMailto) window.location.href = mailto;
-		}
+		openBlank(gmailCompose);
+		openBlank(mailto);
 	}
 </script>
 

@@ -6,11 +6,11 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "bms-logistics/_app",
+	appPath: "_app",
 	assets: new Set(["assets/css/style.css","assets/images/bms-logo.jpeg","assets/js/main.js"]),
 	mimeTypes: {".css":"text/css",".jpeg":"image/jpeg",".js":"text/javascript"},
 	_: {
-		client: {start:"_app/immutable/entry/start.COjb7FNu.js",app:"_app/immutable/entry/app.patnNITg.js",imports:["_app/immutable/entry/start.COjb7FNu.js","_app/immutable/chunks/DD5AN5VC.js","_app/immutable/chunks/DCA0QHLj.js","_app/immutable/chunks/CEl1Hef-.js","_app/immutable/chunks/Bz49E0Qs.js","_app/immutable/entry/app.patnNITg.js","_app/immutable/chunks/DCA0QHLj.js","_app/immutable/chunks/BG_4ERly.js","_app/immutable/chunks/C58DHta9.js","_app/immutable/chunks/Bz49E0Qs.js","_app/immutable/chunks/D5Jz5CkP.js","_app/immutable/chunks/Cv3ajRBm.js","_app/immutable/chunks/D_4YAnl1.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.CJ_gQwJy.js",app:"_app/immutable/entry/app.C78h82Ch.js",imports:["_app/immutable/entry/start.CJ_gQwJy.js","_app/immutable/chunks/ChUVaHUu.js","_app/immutable/chunks/DCA0QHLj.js","_app/immutable/chunks/V8rDMmr0.js","_app/immutable/chunks/Bz49E0Qs.js","_app/immutable/entry/app.C78h82Ch.js","_app/immutable/chunks/DCA0QHLj.js","_app/immutable/chunks/BG_4ERly.js","_app/immutable/chunks/C58DHta9.js","_app/immutable/chunks/Bz49E0Qs.js","_app/immutable/chunks/D5Jz5CkP.js","_app/immutable/chunks/Cv3ajRBm.js","_app/immutable/chunks/D_4YAnl1.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -28,7 +28,7 @@ return {
 				endpoint: null
 			}
 		],
-		prerendered_routes: new Set(["/bms-logistics/","/bms-logistics/en","/bms-logistics/en/about","/bms-logistics/en/contact","/bms-logistics/en/operations","/bms-logistics/en/services","/bms-logistics/en/solutions","/bms-logistics/it","/bms-logistics/it/about","/bms-logistics/it/contact","/bms-logistics/it/operations","/bms-logistics/it/services","/bms-logistics/it/solutions","/bms-logistics/pt","/bms-logistics/pt/about","/bms-logistics/pt/contact","/bms-logistics/pt/operations","/bms-logistics/pt/services","/bms-logistics/pt/solutions"]),
+		prerendered_routes: new Set(["/","/en","/en/about","/en/contact","/en/operations","/en/services","/en/solutions","/it","/it/about","/it/contact","/it/operations","/it/services","/it/solutions","/pt","/pt/about","/pt/contact","/pt/operations","/pt/services","/pt/solutions"]),
 		matchers: async () => {
 			
 			return {  };
