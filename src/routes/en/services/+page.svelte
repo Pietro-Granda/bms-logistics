@@ -9,8 +9,5 @@
 	<meta name="bms-page" content="services" />
 </svelte:head>
 
-{@html page.header}
-<main id="main-content">{@html page.main}</main>
-{@html page.footer}
-{@html page.whatsapp}
+{@html page.main}
 
