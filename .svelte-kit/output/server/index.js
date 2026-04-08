@@ -1,5 +1,5 @@
 import { E as ENDPOINT_METHODS, P as PAGE_METHODS, n as negotiate, m as method_not_allowed, h as handle_error_and_jsonify, g as get_status, i as is_form_content_type, a as normalize_error, b as get_global_name, s as serialize_uses, c as clarify_devalue_error, d as get_node_type, e as noop, f as escape_html, S as SVELTE_KIT_ASSETS, j as create_remote_key, k as static_error_page, r as redirect_response, p as parse_remote_arg, l as stringify, o as deserialize_binary_form, q as split_remote_key, t as once, u as has_prerendered_path, T as TRAILING_SLASH_PARAM, I as INVALIDATED_PARAM, v as handle_fatal_error, w as format_server_error } from "./chunks/shared.js";
-import { B as BROWSER } from "./chunks/render-context.js";
+import { B as BROWSER } from "./chunks/false.js";
 import { json, text, isRedirect, error } from "@sveltejs/kit";
 import { Redirect, SvelteKitError, ActionFailure, HttpError } from "@sveltejs/kit/internal";
 import { with_request_store, merge_tracing, try_get_request_store } from "@sveltejs/kit/internal/server";
@@ -8,8 +8,9 @@ import * as devalue from "devalue";
 import { m as make_trackable, d as disable_search, a as decode_params, S as SCHEME, n as normalize_path, r as resolve, b as decode_pathname } from "./chunks/url.js";
 import { b as base64_encode, t as text_decoder, a as text_encoder, g as get_relative_path } from "./chunks/utils.js";
 import "clsx";
-import { w as writable, r as readable, v as validate_layout_server_exports, a as validate_layout_exports, b as validate_page_server_exports, c as validate_page_exports, d as validate_server_exports } from "./chunks/exports.js";
+import { w as writable, r as readable } from "./chunks/index.js";
 import { p as public_env, r as read_implementation, o as options, s as set_private_env, a as set_public_env, g as get_hooks, b as set_read_implementation } from "./chunks/internal.js";
+import { v as validate_layout_server_exports, a as validate_layout_exports, b as validate_page_server_exports, c as validate_page_exports, d as validate_server_exports } from "./chunks/exports.js";
 import { parse, serialize } from "cookie";
 import * as set_cookie_parser from "set-cookie-parser";
 function with_resolvers() {

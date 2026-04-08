@@ -20,6 +20,42 @@ export function hrefWithBase(base: string, lang: Lang, page: PageKey) {
 	return `${base}${path}`;
 }
 
+export function pageKeyFromPathname(pathname: string): PageKey {
+	// Remove query/hash just in case
+	const path = pathname.split('?')[0].split('#')[0];
+	if (path === '/' || path === '/it') return 'home';
+	if (path === '/en') return 'home';
+	if (path === '/pt') return 'home';
+
+	const parts = path.split('/').filter(Boolean);
+	const last = parts.at(-1) || '';
+	const lang = langFromPath(path);
+
+	// Support both old (/it/services) and italian slugs (/it/servizi)
+	const itMap: Record<string, PageKey> = {
+		'chi-siamo': 'about',
+		about: 'about',
+		servizi: 'services',
+		services: 'services',
+		soluzioni: 'solutions',
+		solutions: 'solutions',
+		operativita: 'operations',
+		operations: 'operations',
+		contatti: 'contact',
+		contact: 'contact'
+	};
+
+	const defaultMap: Record<string, PageKey> = {
+		about: 'about',
+		services: 'services',
+		solutions: 'solutions',
+		operations: 'operations',
+		contact: 'contact'
+	};
+
+	return (lang === 'it' ? itMap[last] : defaultMap[last]) || 'home';
+}
+
 export const ui = {
 	it: {
 		skip: 'Vai al contenuto',

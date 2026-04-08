@@ -1,13 +1,121 @@
-<script lang="ts">
-	import raw from '../../../../en/contact.html?raw';
-	import { extractLegacyPage } from '$lib/legacy/legacy';
-
-	const page = extractLegacyPage(raw, { lang: 'en' });
-</script>
-
 <svelte:head>
-	<meta name="bms-page" content="contact" />
+	<title>Contact | BMS Logistics Quotes, Support and WhatsApp</title>
+	<meta
+		name="description"
+		content="Contact BMS Logistics for transport, warehousing, routing and last-mile support. Request a quote, reach the team by email, phone or WhatsApp, and view the operational map."
+	/>
 </svelte:head>
 
-{@html page.main}
+<script lang="ts">
+	import ContactForm from '$lib/components/ContactForm.svelte';
+</script>
+
+<section class="page-hero">
+	<div class="container hero-grid">
+		<div data-reveal>
+			<nav class="breadcrumbs" aria-label="Breadcrumb">
+				<a href="index.html">Home</a>
+				<span class="separator" aria-hidden="true"></span>
+				<span>Contact</span>
+			</nav>
+			<span class="eyebrow">Contact BMS Logistics</span>
+			<h1>Start a logistics conversation built around real operational needs.</h1>
+			<p>
+				Use the form below to request a quote, discuss service scope or start a logistics partnership conversation.
+				For immediate contact, reach the team directly by phone, email or WhatsApp.
+			</p>
+		</div>
+		<aside class="hero-panel" data-reveal>
+			<span class="panel-kicker">Fast Access</span>
+			<h2>Multiple direct channels for commercial and operational contact.</h2>
+			<ul class="hero-panel-list">
+				<li><strong>Phone</strong><span>+39 349 330 6316</span></li>
+				<li><strong>Email</strong><span>info@bmslogistics.it</span></li>
+				<li><strong>WhatsApp</strong><span>Direct quick-response channel</span></li>
+			</ul>
+		</aside>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container contact-layout">
+		<aside class="contact-panel" data-reveal>
+			<span class="eyebrow">Direct Contact</span>
+			<h2>Reach the right channel for quotes, support or operational alignment.</h2>
+			<div class="contact-list">
+				<div class="contact-item"><span>Commercial Line</span><a href="tel:+393493306316">+39 349 330 6316</a></div>
+				<div class="contact-item">
+					<span>WhatsApp</span><a href="https://wa.me/393493306316" target="_blank" rel="noreferrer">Open WhatsApp Chat</a>
+				</div>
+				<div class="contact-item"><span>Commercial Email</span><a href="mailto:gustavo@bmslogistics.it">gustavo@bmslogistics.it</a></div>
+				<div class="contact-item"><span>Main Email</span><a href="mailto:info@bmslogistics.it">info@bmslogistics.it</a></div>
+				<div class="contact-item"><span>Support Email</span><a href="mailto:supporto@bmslogistics.it">supporto@bmslogistics.it</a></div>
+				<div class="contact-item"><span>PEC</span><a href="mailto:bmslogistics@pec-mail.it">bmslogistics@pec-mail.it</a></div>
+				<div class="contact-item"><span>VAT Number</span><p>03295030211</p></div>
+				<div class="contact-item"><span>Administrative Office</span><p>Via Copernico 4, 39100 Bolzano, Italy</p></div>
+				<div class="contact-item"><span>Operational Hubs</span><p>Monza Hub and Bernate Ticino Hub</p></div>
+			</div>
+		</aside>
+
+		<div class="form-card" data-reveal>
+			<span class="eyebrow">Request Form</span>
+			<h2>Tell us what your operation needs.</h2>
+			<ContactForm lang="en" />
+		</div>
+	</div>
+</section>
+
+<section class="section section--alt">
+	<div class="container network-layout">
+		<div class="section-intro" data-reveal>
+			<span class="eyebrow">Map and footprint</span>
+			<h2 class="section-title">A live map for the administrative office plus a structured view of the operating network.</h2>
+			<p class="section-copy">
+				Bolzano is the main administrative point for contact and coordination, while the operating structure extends
+				across Monza and Bernate Ticino.
+			</p>
+		</div>
+		<div class="map-layout" data-reveal>
+			<div class="map-embed">
+				<iframe
+					title="BMS Logistics Bolzano office map"
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+					src="https://www.google.com/maps?q=Via%20Copernico%204%2C%2039100%20Bolzano%2C%20Italy&output=embed"
+				></iframe>
+			</div>
+			<div class="location-grid">
+				<article class="location-card">
+					<small>Administrative office</small>
+					<strong>Bolzano</strong>
+					<p>Via Copernico 4, 39100 Bolzano, Italy.</p>
+					<a
+						href="https://www.google.com/maps/search/?api=1&amp;query=Via+Copernico+4%2C+39100+Bolzano%2C+Italy"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Open in Google Maps
+					</a>
+				</article>
+				<article class="location-card">
+					<small>Operational hub</small>
+					<strong>Monza Brianza</strong>
+					<p>Field execution point for staging, dispatch and route release.</p>
+				</article>
+				<article class="location-card">
+					<small>Operational hub</small>
+					<strong>Bernate Ticino</strong>
+					<p>Warehouse support and operational continuity for the chain.</p>
+				</article>
+			</div>
+			<div class="network-board" aria-label="BMS Logistics contact map">
+				<span class="network-line line--1" aria-hidden="true"></span>
+				<span class="network-line line--2" aria-hidden="true"></span>
+				<article class="network-node node--bolzano"><small>Office</small><strong>Bolzano</strong><p>Administrative office and central contact.</p></article>
+				<article class="network-node node--monza"><small>Hub</small><strong>Monza</strong><p>Operational dispatch and route-release node.</p></article>
+				<article class="network-node node--bernate"><small>Hub</small><strong>Bernate Ticino</strong><p>Warehouse and continuity support for the chain.</p></article>
+			</div>
+		</div>
+	</div>
+</section>
 

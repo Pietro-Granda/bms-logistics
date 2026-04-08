@@ -3,6 +3,7 @@
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 	import SiteFooter from '$lib/components/SiteFooter.svelte';
 	import WhatsAppLink from '$lib/components/WhatsAppLink.svelte';
+	import RevealsController from '$lib/components/RevealsController.svelte';
 	import { langFromPath } from '$lib/site/i18n';
 
 	let { children } = $props();
@@ -16,6 +17,7 @@
 <a class="skip-link" href="#main-content">{skipText}</a>
 
 <SiteHeader />
+<RevealsController />
 
 <main id="main-content">
 	{@render children()}

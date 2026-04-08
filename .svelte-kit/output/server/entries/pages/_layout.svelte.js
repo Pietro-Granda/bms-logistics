@@ -1,8 +1,11 @@
-import { a as attr_class, b as attr, c as attr_style, e as escape_html, d as derived, s as stringify, f as bind_props } from "../../chunks/root.js";
-import { p as page } from "../../chunks/index.js";
+import { a as attr_class, b as attr, c as attr_style, e as escape_html, d as derived, s as stringify, f as bind_props } from "../../chunks/renderer.js";
+import { p as page } from "../../chunks/index2.js";
 import { b as base } from "../../chunks/server.js";
 import "../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
+import "../../chunks/root.js";
+import "clsx";
+import { o as onDestroy } from "../../chunks/index-server.js";
 function langFromPath(pathname) {
   if (pathname.startsWith("/en")) return "en";
   if (pathname.startsWith("/pt")) return "pt";
@@ -17,6 +20,35 @@ function hrefWithBase(base2, lang, page2) {
   if (!base2) return path;
   if (path === "/") return `${base2}/`;
   return `${base2}${path}`;
+}
+function pageKeyFromPathname(pathname) {
+  const path = pathname.split("?")[0].split("#")[0];
+  if (path === "/" || path === "/it") return "home";
+  if (path === "/en") return "home";
+  if (path === "/pt") return "home";
+  const parts = path.split("/").filter(Boolean);
+  const last = parts.at(-1) || "";
+  const lang = langFromPath(path);
+  const itMap = {
+    "chi-siamo": "about",
+    about: "about",
+    servizi: "services",
+    services: "services",
+    soluzioni: "solutions",
+    solutions: "solutions",
+    operativita: "operations",
+    operations: "operations",
+    contatti: "contact",
+    contact: "contact"
+  };
+  const defaultMap = {
+    about: "about",
+    services: "services",
+    solutions: "solutions",
+    operations: "operations",
+    contact: "contact"
+  };
+  return (lang === "it" ? itMap[last] : defaultMap[last]) || "home";
 }
 const ui = {
   it: {
@@ -95,7 +127,7 @@ const ui = {
 function SiteHeader($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     const lang = derived(() => langFromPath(page.url.pathname));
-    const current = derived(() => page.url.pathname === "/" || page.url.pathname === "/it" ? "home" : page.url.pathname.split("/").filter(Boolean).at(-1) || "home");
+    const current = derived(() => pageKeyFromPathname(page.url.pathname));
     let navOpen = false;
     let scrolled = false;
     $$renderer2.push(`<header${attr_class("site-header", void 0, {
@@ -103,7 +135,7 @@ function SiteHeader($$renderer, $$props) {
         // Close mobile nav when navigating to a new route.
         scrolled
       )
-    })}><div class="container header-bar"><a class="brand"${attr("href", hrefWithBase(base, lang(), "home"))} aria-label="BMS Logistics"><img class="brand-logo"${attr("src", `${stringify(base)}/assets/images/bms-logo.jpeg`)} alt="BMS Logistics"/></a> <div class="header-tools"><div class="language-switcher" role="group"${attr("aria-label", ui[lang()].langAria)}><a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "it" })}${attr("href", `${stringify(base)}/`)}${attr("aria-current", lang() === "it" ? "page" : void 0)}>IT</a> <a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "en" })}${attr("href", `${stringify(base)}/en`)}${attr("aria-current", lang() === "en" ? "page" : void 0)}>EN</a> <a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "pt" })}${attr("href", `${stringify(base)}/pt`)}${attr("aria-current", lang() === "pt" ? "page" : void 0)}>PT</a></div> <button class="nav-toggle" type="button"${attr("aria-expanded", navOpen)} aria-controls="site-navigation"${attr("aria-label", ui[lang()].navToggleOpen)}><span></span> <span></span> <span></span></button></div> <nav${attr_class("site-nav svelte-a8kxe2", void 0, { "is-open": navOpen })} id="site-navigation"${attr("aria-label", ui[lang()].navAria)} data-nav=""${attr_style("", {
+    })}><div class="container header-bar"><a class="brand"${attr("href", hrefWithBase(base, lang(), "home"))} aria-label="BMS Logistics"><img class="brand-logo"${attr("src", `${stringify(base)}/assets/images/bms-logo.jpeg`)} alt="BMS Logistics"/></a> <div class="header-tools"><div class="language-switcher" role="group"${attr("aria-label", ui[lang()].langAria)}><a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "it" })}${attr("href", hrefWithBase(base, "it", current()))}${attr("aria-current", lang() === "it" ? "page" : void 0)}>IT</a> <a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "en" })}${attr("href", hrefWithBase(base, "en", current()))}${attr("aria-current", lang() === "en" ? "page" : void 0)}>EN</a> <a${attr_class("language-switcher__button", void 0, { "is-active": lang() === "pt" })}${attr("href", hrefWithBase(base, "pt", current()))}${attr("aria-current", lang() === "pt" ? "page" : void 0)}>PT</a></div> <button class="nav-toggle" type="button"${attr("aria-expanded", navOpen)} aria-controls="site-navigation"${attr("aria-label", ui[lang()].navToggleOpen)}><span></span> <span></span> <span></span></button></div> <nav${attr_class("site-nav svelte-a8kxe2", void 0, { "is-open": navOpen })} id="site-navigation"${attr("aria-label", ui[lang()].navAria)} data-nav=""${attr_style("", {
       opacity: page.url.pathname.length ? void 0 : void 0
     })}><a${attr("href", hrefWithBase(base, lang(), "home"))}${attr_class("", void 0, { "is-current": current() === "home" })}>${escape_html(ui[lang()].nav.home)}</a> <a${attr("href", hrefWithBase(base, lang(), "about"))}${attr_class("", void 0, { "is-current": current() === "about" })}>${escape_html(ui[lang()].nav.about)}</a> <a${attr("href", hrefWithBase(base, lang(), "services"))}${attr_class("", void 0, { "is-current": current() === "services" })}>${escape_html(ui[lang()].nav.services)}</a> <a${attr("href", hrefWithBase(base, lang(), "solutions"))}${attr_class("", void 0, { "is-current": current() === "solutions" })}>${escape_html(ui[lang()].nav.solutions)}</a> <a${attr("href", hrefWithBase(base, lang(), "operations"))}${attr_class("", void 0, { "is-current": current() === "operations" })}>${escape_html(ui[lang()].nav.operations)}</a> <a${attr("href", hrefWithBase(base, lang(), "contact"))}${attr_class("", void 0, { "is-current": current() === "contact" })}>${escape_html(ui[lang()].nav.contact)}</a> <a class="button button--small button--accent nav-cta"${attr("href", hrefWithBase(base, lang(), "contact"))}>${escape_html(ui[lang()].nav.cta)}</a></nav></div></header>`);
   });
@@ -147,6 +179,12 @@ function WhatsAppLink($$renderer, $$props) {
     bind_props($$props, { lang });
   });
 }
+function RevealsController($$renderer, $$props) {
+  $$renderer.component(($$renderer2) => {
+    let observer;
+    onDestroy(() => observer?.disconnect());
+  });
+}
 function _layout($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let { children } = $$props;
@@ -154,6 +192,8 @@ function _layout($$renderer, $$props) {
     const skipText = derived(() => lang() === "en" ? "Skip to content" : lang() === "pt" ? "Ir para o conteudo" : "Vai al contenuto");
     $$renderer2.push(`<a class="skip-link" href="#main-content">${escape_html(skipText())}</a> `);
     SiteHeader($$renderer2);
+    $$renderer2.push(`<!----> `);
+    RevealsController($$renderer2);
     $$renderer2.push(`<!----> <main id="main-content">`);
     children($$renderer2);
     $$renderer2.push(`<!----></main> `);

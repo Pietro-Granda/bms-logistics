@@ -11,20 +11,30 @@
       "_internal.js"
     ]
   },
+  "_ContactForm.js": {
+    "file": "chunks/ContactForm.js",
+    "name": "ContactForm",
+    "imports": [
+      "_renderer.js"
+    ]
+  },
   "_Reveal.js": {
     "file": "chunks/Reveal.js",
     "name": "Reveal",
     "imports": [
-      "_root.js"
+      "_renderer.js",
+      "_index-server.js"
     ]
   },
   "_client.js": {
     "file": "chunks/client.js",
     "name": "client",
     "imports": [
-      "_root.js",
+      "_state.svelte.js",
       "_url.js",
       "_utils.js",
+      "_index.js",
+      "_root.js",
       "_exports.js"
     ]
   },
@@ -34,17 +44,33 @@
   },
   "_exports.js": {
     "file": "chunks/exports.js",
-    "name": "exports",
+    "name": "exports"
+  },
+  "_false.js": {
+    "file": "chunks/false.js",
+    "name": "false"
+  },
+  "_index-server.js": {
+    "file": "chunks/index-server.js",
+    "name": "index-server",
     "imports": [
-      "_root.js"
+      "_renderer.js"
     ]
   },
   "_index.js": {
     "file": "chunks/index.js",
     "name": "index",
     "imports": [
-      "_client.js",
+      "_renderer.js",
       "_root.js"
+    ]
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index",
+    "imports": [
+      "_client.js",
+      "_renderer.js"
     ]
   },
   "_internal.js": {
@@ -56,24 +82,23 @@
       "_server.js"
     ]
   },
-  "_legacy.js": {
-    "file": "chunks/legacy.js",
-    "name": "legacy",
-    "imports": [
-      "_server.js",
-      "_url.js",
-      "_root.js"
-    ]
-  },
   "_render-context.js": {
     "file": "chunks/render-context.js",
     "name": "render-context"
+  },
+  "_renderer.js": {
+    "file": "chunks/renderer.js",
+    "name": "renderer",
+    "imports": [
+      "_render-context.js"
+    ]
   },
   "_root.js": {
     "file": "chunks/root.js",
     "name": "root",
     "imports": [
-      "_render-context.js"
+      "_renderer.js",
+      "_false.js"
     ]
   },
   "_server.js": {
@@ -86,6 +111,15 @@
     "imports": [
       "_utils.js",
       "_render-context.js"
+    ]
+  },
+  "_state.svelte.js": {
+    "file": "chunks/state.svelte.js",
+    "name": "state.svelte",
+    "imports": [
+      "_renderer.js",
+      "_url.js",
+      "_root.js"
     ]
   },
   "_url.js": {
@@ -103,7 +137,7 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_render-context.js",
+      "_false.js",
       "_server.js",
       "_environment.js"
     ]
@@ -114,8 +148,8 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_index.js"
+      "_renderer.js",
+      "_index2.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -125,12 +159,13 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_render-context.js",
+      "_false.js",
       "_server.js",
       "_url.js",
       "_utils.js",
-      "_exports.js",
-      "_internal.js"
+      "_index.js",
+      "_internal.js",
+      "_exports.js"
     ]
   },
   "src/routes/+layout.svelte": {
@@ -139,10 +174,12 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_index.js",
+      "_renderer.js",
+      "_index2.js",
       "_server.js",
-      "_url.js"
+      "_url.js",
+      "_root.js",
+      "_index-server.js"
     ],
     "css": [
       "_app/immutable/assets/_layout.DflFiA85.css"
@@ -160,10 +197,11 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_Reveal.js",
       "_server.js",
-      "_url.js"
+      "_url.js",
+      "_root.js"
     ]
   },
   "src/routes/[...legacy]/+page.svelte": {
@@ -176,7 +214,8 @@
       "_url.js",
       "_root.js",
       "_utils.js",
-      "_exports.js"
+      "_exports.js",
+      "_state.svelte.js"
     ]
   },
   "src/routes/[...legacy]/+page.ts": {
@@ -191,8 +230,7 @@
     "src": "src/routes/en/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/en/about/+page.svelte": {
@@ -201,8 +239,7 @@
     "src": "src/routes/en/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/en/contact/+page.svelte": {
@@ -211,8 +248,8 @@
     "src": "src/routes/en/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js",
+      "_ContactForm.js"
     ]
   },
   "src/routes/en/operations/+page.svelte": {
@@ -221,8 +258,7 @@
     "src": "src/routes/en/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/en/services/+page.svelte": {
@@ -231,8 +267,7 @@
     "src": "src/routes/en/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/en/solutions/+page.svelte": {
@@ -241,8 +276,7 @@
     "src": "src/routes/en/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/it/+page.svelte": {
@@ -251,8 +285,12 @@
     "src": "src/routes/it/+page.svelte",
     "isEntry": true,
     "imports": [
+      "_renderer.js",
+      "_url.js",
+      "_utils.js",
       "_root.js",
-      "_legacy.js"
+      "_exports.js",
+      "_state.svelte.js"
     ]
   },
   "src/routes/it/about/+page.svelte": {
@@ -261,8 +299,7 @@
     "src": "src/routes/it/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/it/contact/+page.svelte": {
@@ -271,10 +308,12 @@
     "src": "src/routes/it/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
+      "_renderer.js",
       "_Reveal.js",
+      "_ContactForm.js",
       "_server.js",
-      "_url.js"
+      "_url.js",
+      "_root.js"
     ]
   },
   "src/routes/it/operations/+page.svelte": {
@@ -283,8 +322,7 @@
     "src": "src/routes/it/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/it/services/+page.svelte": {
@@ -293,8 +331,7 @@
     "src": "src/routes/it/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/it/solutions/+page.svelte": {
@@ -303,8 +340,7 @@
     "src": "src/routes/it/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/pt/+page.svelte": {
@@ -313,8 +349,7 @@
     "src": "src/routes/pt/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/pt/about/+page.svelte": {
@@ -323,8 +358,7 @@
     "src": "src/routes/pt/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/pt/contact/+page.svelte": {
@@ -333,8 +367,8 @@
     "src": "src/routes/pt/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js",
+      "_ContactForm.js"
     ]
   },
   "src/routes/pt/operations/+page.svelte": {
@@ -343,8 +377,7 @@
     "src": "src/routes/pt/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/pt/services/+page.svelte": {
@@ -353,8 +386,7 @@
     "src": "src/routes/pt/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   },
   "src/routes/pt/solutions/+page.svelte": {
@@ -363,8 +395,7 @@
     "src": "src/routes/pt/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_root.js",
-      "_legacy.js"
+      "_renderer.js"
     ]
   }
 }

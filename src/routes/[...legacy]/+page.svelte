@@ -26,11 +26,19 @@
 		return path.replace(/\.html$/, '');
 	}
 
+	function mapLegacySlugToRoute(path: string) {
+		// base-less path starting with '/'
+		const map: Record<string, string> = {
+			
+		};
+		return map[path] ?? null;
+	}
+
 	let target = $state<string | null>(null);
 
 	onMount(async () => {
 		const rel = stripBase(pathname);
-		target = mapLegacyHtmlToRoute(rel);
+		target = mapLegacyHtmlToRoute(rel) ?? mapLegacySlugToRoute(rel);
 
 		if (target) {
 			await goto(`${base}${target === '/' ? '/' : target}`, { replaceState: true });

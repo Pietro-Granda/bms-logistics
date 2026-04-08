@@ -1,13 +1,18 @@
 <script lang="ts">
-	import raw from '../../../index.html?raw';
-	import { extractLegacyPage } from '$lib/legacy/legacy';
+	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
 
-	const page = extractLegacyPage(raw, { lang: 'it' });
+	onMount(() => {
+		// Italian home is the root route. Keep /it as a convenience redirect.
+		goto(`${base}/`, { replaceState: true });
+	});
 </script>
 
 <svelte:head>
-	<meta name="bms-page" content="home" />
+	<title>BMS Logistics | Trasporto, Magazzino e Last Mile</title>
+	<meta name="robots" content="noindex,follow" />
 </svelte:head>
 
-{@html page.main}
+<p class="sr-only">Redirecting…</p>
 

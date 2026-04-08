@@ -1,15 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { base } from '$app/paths';
-	import { langFromPath, hrefWithBase, ui, type Lang, type PageKey } from '$lib/site/i18n';
+	import { langFromPath, hrefWithBase, pageKeyFromPathname, ui, type Lang, type PageKey } from '$lib/site/i18n';
 
 	const lang: Lang = $derived(langFromPath(page.url.pathname));
 
-	const current: PageKey = $derived(
-		page.url.pathname === '/' || page.url.pathname === '/it'
-			? 'home'
-			: (page.url.pathname.split('/').filter(Boolean).at(-1) as PageKey) || 'home'
-	);
+	const current: PageKey = $derived(pageKeyFromPathname(page.url.pathname));
 
 	let navOpen = $state(false);
 	let scrolled = $state(false);
@@ -48,21 +44,21 @@
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'it'}
-					href="{base}/"
+					href={hrefWithBase(base, 'it', current)}
 					aria-current={lang === 'it' ? 'page' : undefined}
 					>IT</a
 				>
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'en'}
-					href="{base}/en"
+					href={hrefWithBase(base, 'en', current)}
 					aria-current={lang === 'en' ? 'page' : undefined}
 					>EN</a
 				>
 				<a
 					class="language-switcher__button"
 					class:is-active={lang === 'pt'}
-					href="{base}/pt"
+					href={hrefWithBase(base, 'pt', current)}
 					aria-current={lang === 'pt' ? 'page' : undefined}
 					>PT</a
 				>
