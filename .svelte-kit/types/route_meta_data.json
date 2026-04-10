@@ -3,9 +3,6 @@
 		"src/routes/+layout.ts",
 		"src/routes/+layout.ts"
 	],
-	"/admin": [
-		"src/routes/+layout.ts"
-	],
 	"/en": [
 		"src/routes/+layout.ts"
 	],

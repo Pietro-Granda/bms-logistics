@@ -1,11 +1,10 @@
-import { h as head, b as attr, s as stringify } from "../../../../chunks/renderer.js";
+import { h as head, b as attr, s as stringify } from "../../../../chunks/root.js";
 import { R as Reveal } from "../../../../chunks/Reveal.js";
 import { C as ContactForm } from "../../../../chunks/ContactForm.js";
 import "clsx";
 import { b as base } from "../../../../chunks/server.js";
 import "../../../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
-import "../../../../chunks/root.js";
 function GmailProtocolButton($$renderer) {
   $$renderer.push(`<div class="gmail-helper svelte-1pr1t76"><a class="button button--ghost" href="https://mail.google.com/" target="_blank" rel="noreferrer">Apri Gmail</a> <p class="form-note gmail-helper__note svelte-1pr1t76">Per usare Gmail come gestore dei link email in Chrome, abilitalo da Gmail (icona “gestori protocollo” nella barra
 		indirizzi). In alternativa, il form apre direttamente la schermata di composizione Gmail.</p></div>`);

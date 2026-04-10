@@ -1,8 +1,7 @@
-import { h as head, b as attr, s as stringify } from "../../../../chunks/renderer.js";
+import { h as head, b as attr, s as stringify } from "../../../../chunks/root.js";
 import { b as base } from "../../../../chunks/server.js";
 import "../../../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
-import "../../../../chunks/root.js";
 function _page($$renderer) {
   head("1fyg2ur", $$renderer, ($$renderer2) => {
     $$renderer2.title(($$renderer3) => {

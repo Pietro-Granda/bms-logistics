@@ -1,4 +1,4 @@
-import { j as ssr_context } from "./renderer.js";
+import { j as ssr_context } from "./root.js";
 import "clsx";
 function onDestroy(fn) {
   /** @type {SSRContext} */

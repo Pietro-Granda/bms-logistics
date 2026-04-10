@@ -1,9 +1,8 @@
-import { a as attr_class, b as attr, c as attr_style, e as escape_html, d as derived, s as stringify, f as bind_props } from "../../chunks/renderer.js";
+import { a as attr_class, b as attr, c as attr_style, e as escape_html, d as derived, s as stringify, f as bind_props } from "../../chunks/root.js";
 import { p as page } from "../../chunks/index2.js";
 import { b as base } from "../../chunks/server.js";
 import "../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
-import "../../chunks/root.js";
 import "clsx";
 import { o as onDestroy } from "../../chunks/index-server.js";
 import "@sveltejs/kit/internal";

@@ -1,9 +1,8 @@
-import { h as head, b as attr, s as stringify } from "../../../../chunks/renderer.js";
+import { h as head, b as attr, s as stringify } from "../../../../chunks/root.js";
 import { C as ContactForm } from "../../../../chunks/ContactForm.js";
 import { b as base } from "../../../../chunks/server.js";
 import "../../../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
-import "../../../../chunks/root.js";
 function _page($$renderer) {
   head("njgzms", $$renderer, ($$renderer2) => {
     $$renderer2.title(($$renderer3) => {

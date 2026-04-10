@@ -1,4 +1,4 @@
-import { a as attr_class, i as slot } from "./renderer.js";
+import { a as attr_class, i as slot } from "./root.js";
 import { o as onDestroy } from "./index-server.js";
 function Reveal($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {

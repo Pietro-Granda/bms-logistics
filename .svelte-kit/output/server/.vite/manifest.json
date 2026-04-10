@@ -15,14 +15,14 @@
     "file": "chunks/ContactForm.js",
     "name": "ContactForm",
     "imports": [
-      "_renderer.js"
+      "_root.js"
     ]
   },
   "_Reveal.js": {
     "file": "chunks/Reveal.js",
     "name": "Reveal",
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_index-server.js"
     ]
   },
@@ -46,22 +46,17 @@
     "file": "chunks/exports.js",
     "name": "exports"
   },
-  "_false.js": {
-    "file": "chunks/false.js",
-    "name": "false"
-  },
   "_index-server.js": {
     "file": "chunks/index-server.js",
     "name": "index-server",
     "imports": [
-      "_renderer.js"
+      "_root.js"
     ]
   },
   "_index.js": {
     "file": "chunks/index.js",
     "name": "index",
     "imports": [
-      "_renderer.js",
       "_root.js"
     ]
   },
@@ -70,7 +65,7 @@
     "name": "index",
     "imports": [
       "_client.js",
-      "_renderer.js"
+      "_root.js"
     ]
   },
   "_internal.js": {
@@ -86,19 +81,11 @@
     "file": "chunks/render-context.js",
     "name": "render-context"
   },
-  "_renderer.js": {
-    "file": "chunks/renderer.js",
-    "name": "renderer",
-    "imports": [
-      "_render-context.js"
-    ]
-  },
   "_root.js": {
     "file": "chunks/root.js",
     "name": "root",
     "imports": [
-      "_renderer.js",
-      "_false.js"
+      "_render-context.js"
     ]
   },
   "_server.js": {
@@ -117,9 +104,8 @@
     "file": "chunks/state.svelte.js",
     "name": "state.svelte",
     "imports": [
-      "_renderer.js",
-      "_url.js",
-      "_root.js"
+      "_root.js",
+      "_url.js"
     ]
   },
   "_url.js": {
@@ -137,7 +123,7 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_false.js",
+      "_render-context.js",
       "_server.js",
       "_environment.js"
     ]
@@ -148,7 +134,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_index2.js"
     ]
   },
@@ -159,7 +145,7 @@
     "isEntry": true,
     "imports": [
       "_shared.js",
-      "_false.js",
+      "_render-context.js",
       "_server.js",
       "_url.js",
       "_utils.js",
@@ -174,11 +160,10 @@
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_index2.js",
       "_server.js",
       "_url.js",
-      "_root.js",
       "_index-server.js",
       "_utils.js",
       "_exports.js",
@@ -201,11 +186,10 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_Reveal.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/[...legacy]/+page.svelte": {
@@ -228,25 +212,15 @@
     "src": "src/routes/[...legacy]/+page.ts",
     "isEntry": true
   },
-  "src/routes/admin/+page.svelte": {
-    "file": "entries/pages/admin/_page.svelte.js",
-    "name": "entries/pages/admin/_page.svelte",
-    "src": "src/routes/admin/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_renderer.js"
-    ]
-  },
   "src/routes/en/+page.svelte": {
     "file": "entries/pages/en/_page.svelte.js",
     "name": "entries/pages/en/_page.svelte",
     "src": "src/routes/en/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/en/about/+page.svelte": {
@@ -255,10 +229,9 @@
     "src": "src/routes/en/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/en/contact/+page.svelte": {
@@ -267,11 +240,10 @@
     "src": "src/routes/en/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_ContactForm.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/en/operations/+page.svelte": {
@@ -280,10 +252,9 @@
     "src": "src/routes/en/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/en/services/+page.svelte": {
@@ -292,10 +263,9 @@
     "src": "src/routes/en/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/en/solutions/+page.svelte": {
@@ -304,10 +274,9 @@
     "src": "src/routes/en/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/it/+page.svelte": {
@@ -316,10 +285,9 @@
     "src": "src/routes/it/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_url.js",
       "_utils.js",
-      "_root.js",
       "_exports.js",
       "_state.svelte.js"
     ]
@@ -330,10 +298,9 @@
     "src": "src/routes/it/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/it/contact/+page.svelte": {
@@ -342,12 +309,11 @@
     "src": "src/routes/it/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_Reveal.js",
       "_ContactForm.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ],
     "css": [
       "_app/immutable/assets/_page.3zY7V8rv.css"
@@ -359,10 +325,9 @@
     "src": "src/routes/it/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/it/services/+page.svelte": {
@@ -371,10 +336,9 @@
     "src": "src/routes/it/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/it/solutions/+page.svelte": {
@@ -383,10 +347,9 @@
     "src": "src/routes/it/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/+page.svelte": {
@@ -395,10 +358,9 @@
     "src": "src/routes/pt/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/about/+page.svelte": {
@@ -407,10 +369,9 @@
     "src": "src/routes/pt/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/contact/+page.svelte": {
@@ -419,11 +380,10 @@
     "src": "src/routes/pt/contact/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_ContactForm.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/operations/+page.svelte": {
@@ -432,10 +392,9 @@
     "src": "src/routes/pt/operations/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/services/+page.svelte": {
@@ -444,10 +403,9 @@
     "src": "src/routes/pt/services/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   },
   "src/routes/pt/solutions/+page.svelte": {
@@ -456,10 +414,9 @@
     "src": "src/routes/pt/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_renderer.js",
+      "_root.js",
       "_server.js",
-      "_url.js",
-      "_root.js"
+      "_url.js"
     ]
   }
 }

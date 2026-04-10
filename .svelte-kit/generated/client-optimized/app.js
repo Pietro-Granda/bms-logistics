@@ -22,34 +22,32 @@ export const nodes = [
 	() => import('./nodes/18'),
 	() => import('./nodes/19'),
 	() => import('./nodes/20'),
-	() => import('./nodes/21'),
-	() => import('./nodes/22')
+	() => import('./nodes/21')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/admin": [3],
-		"/en": [4],
-		"/en/about": [5],
-		"/en/contact": [6],
-		"/en/operations": [7],
-		"/en/services": [8],
-		"/en/solutions": [9],
-		"/it": [10],
-		"/it/about": [11],
-		"/it/contact": [12],
-		"/it/operations": [13],
-		"/it/services": [14],
-		"/it/solutions": [15],
-		"/pt": [16],
-		"/pt/about": [17],
-		"/pt/contact": [18],
-		"/pt/operations": [19],
-		"/pt/services": [20],
-		"/pt/solutions": [21],
-		"/[...legacy]": [22]
+		"/en": [3],
+		"/en/about": [4],
+		"/en/contact": [5],
+		"/en/operations": [6],
+		"/en/services": [7],
+		"/en/solutions": [8],
+		"/it": [9],
+		"/it/about": [10],
+		"/it/contact": [11],
+		"/it/operations": [12],
+		"/it/services": [13],
+		"/it/solutions": [14],
+		"/pt": [15],
+		"/pt/about": [16],
+		"/pt/contact": [17],
+		"/pt/operations": [18],
+		"/pt/services": [19],
+		"/pt/solutions": [20],
+		"/[...legacy]": [21]
 	};
 
 export const hooks = {

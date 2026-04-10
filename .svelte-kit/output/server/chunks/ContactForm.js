@@ -1,4 +1,4 @@
-import { e as escape_html, b as attr, f as bind_props } from "./renderer.js";
+import { e as escape_html, b as attr, f as bind_props } from "./root.js";
 function ContactForm($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let lang = $$props["lang"];
