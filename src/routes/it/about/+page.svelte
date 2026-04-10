@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Chi siamo | BMS Logistics Pensiero operativo, logistica strategica</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Percorso">
-				<a href="../index.html">Home</a>
+				<a href="{base}/">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Chi siamo</span>
 			</nav>
@@ -172,7 +176,7 @@
 				<h2>Scopri i servizi e le soluzioni che sostengono il modello operativo di BMS Logistics.</h2>
 				<p>Passa dal posizionamento all'esecuzione con una vista piu dettagliata su servizi, partnership e struttura operativa.</p>
 			</div>
-			<a class="button button--accent" href="services.html">Vedi i servizi</a>
+			<a class="button button--accent" href="{base}/it/services">Vedi i servizi</a>
 		</div>
 	</div>
 </section>

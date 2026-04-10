@@ -2,7 +2,7 @@
 
 export const index = 9;
 let component_cache;
-export const component = async () => component_cache ??= (await import('../entries/pages/it/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/9.DnLD9g_s.js","_app/immutable/chunks/Bzak7iHL.js","_app/immutable/chunks/DmG_fpJh.js","_app/immutable/chunks/Dx5NQn3a.js","_app/immutable/chunks/DPCP0V4Z.js","_app/immutable/chunks/DHkRY6ge.js","_app/immutable/chunks/Dn7lp1p3.js","_app/immutable/chunks/BrrX6qbW.js","_app/immutable/chunks/BO3_Nfn9.js","_app/immutable/chunks/CWSG5Izu.js"];
+export const component = async () => component_cache ??= (await import('../entries/pages/en/solutions/_page.svelte.js')).default;
+export const imports = ["_app/immutable/nodes/9.CFbymh8N.js","_app/immutable/chunks/Bzak7iHL.js","_app/immutable/chunks/C4HiGtA0.js","_app/immutable/chunks/DD-yQKK6.js","_app/immutable/chunks/p4Z2NWDp.js","_app/immutable/chunks/VG7nEb0_.js","_app/immutable/chunks/BIfUGEb1.js","_app/immutable/chunks/DD1dROoB.js"];
 export const stylesheets = [];
 export const fonts = [];

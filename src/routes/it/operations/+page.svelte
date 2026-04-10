@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Operativita | BMS Logistics Hub, magazzino ed esecuzione</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Percorso">
-				<a href="../index.html">Home</a>
+				<a href="{base}/">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Operativita</span>
 			</nav>
@@ -173,7 +177,7 @@
 					attorno al tuo workflow effettivo.
 				</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Parla con il team operativo</a>
+			<a class="button button--accent" href="{base}/it/contact">Parla con il team operativo</a>
 		</div>
 	</div>
 </section>

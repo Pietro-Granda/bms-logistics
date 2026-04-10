@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>About BMS Logistics | Operational Thinking, Strategic Logistics</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Breadcrumb">
-				<a href="index.html">Home</a>
+				<a href="{base}/en">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>About</span>
 			</nav>
@@ -159,7 +163,7 @@
 				<h2>See the services and solutions behind the BMS Logistics operating model.</h2>
 				<p>Move from positioning to execution with a detailed look at the services, partnership structures and operational setup.</p>
 			</div>
-			<a class="button button--accent" href="services.html">View Services</a>
+			<a class="button button--accent" href="{base}/en/services">View Services</a>
 		</div>
 	</div>
 </section>

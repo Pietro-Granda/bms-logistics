@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Servizi | BMS Logistics Portafoglio di servizi integrati</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Percorso">
-				<a href="../index.html">Home</a>
+				<a href="{base}/">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Servizi</span>
 			</nav>
@@ -158,7 +162,7 @@
 					magazzino e alla complessita del routing.
 				</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Richiedi una proposta di servizio</a>
+			<a class="button button--accent" href="{base}/it/contact">Richiedi una proposta di servizio</a>
 		</div>
 	</div>
 </section>

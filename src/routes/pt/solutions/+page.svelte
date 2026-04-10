@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Solucoes | Parcerias logisticas B2B da BMS Logistics</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Trilha de navegacao">
-				<a href="index.html">Home</a>
+				<a href="{base}/pt">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Solucoes</span>
 			</nav>
@@ -142,7 +146,7 @@
 				<h2>Procura um parceiro logistico capaz de crescer junto com a sua operacao?</h2>
 				<p>Compartilhe sua malha de entregas, as necessidades de armazem ou o plano de expansao e a BMS Logistics podera desenhar um caminho adequado.</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Discutir uma solucao</a>
+			<a class="button button--accent" href="{base}/pt/contact">Discutir uma solucao</a>
 		</div>
 	</div>
 </section>

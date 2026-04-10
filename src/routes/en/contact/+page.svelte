@@ -8,13 +8,14 @@
 
 <script lang="ts">
 	import ContactForm from '$lib/components/ContactForm.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <section class="page-hero">
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Breadcrumb">
-				<a href="index.html">Home</a>
+				<a href="{base}/en">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Contact</span>
 			</nav>

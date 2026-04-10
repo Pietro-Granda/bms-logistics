@@ -88,7 +88,7 @@
 			message
 		];
 
-		const to = 'boscaratopietro@gmail.com';
+		const to = 'gustavo@bmslogistics.it';
 		const encodedBody = encodeURIComponent(bodyLines.join('\n'));
 		const encodedSubject = encodeURIComponent(subject);
 

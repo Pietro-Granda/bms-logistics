@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>BMS Logistics | Transporte integrado, armazenagem e last mile</title>
 	<meta
@@ -16,8 +20,8 @@
 				operacional, ajudando marcas e distribuidores a operar com mais velocidade, mais estrutura e menos atrito.
 			</p>
 			<div class="hero-actions">
-				<a class="button button--accent" href="contact.html">Solicitar proposta</a>
-				<a class="button button--ghost" href="operations.html">Ver operacoes</a>
+				<a class="button button--accent" href="{base}/pt/contact">Solicitar proposta</a>
+				<a class="button button--ghost" href="{base}/pt/operations">Ver operacoes</a>
 			</div>
 			<ul class="hero-tags" aria-label="Principais pontos fortes">
 				<li>Hubs de Monza e Bernate</li>
@@ -146,7 +150,7 @@
 		</div>
 
 		<div class="section-actions" data-reveal>
-			<a class="button" href="services.html">Explorar todos os servicos</a>
+			<a class="button" href="{base}/pt/services">Explorar todos os servicos</a>
 		</div>
 	</div>
 </section>
@@ -253,7 +257,7 @@
 				<h2>Monte uma estrutura logistica capaz de sustentar crescimento sem perder controle.</h2>
 				<p>Converse com a BMS Logistics sobre transporte recorrente, suporte de armazem, execucao last mile ou um modelo operacional personalizado para o seu negocio.</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Iniciar conversa</a>
+			<a class="button button--accent" href="{base}/pt/contact">Iniciar conversa</a>
 		</div>
 	</div>
 </section>

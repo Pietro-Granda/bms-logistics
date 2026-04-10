@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Servicos | Portfolio integrado da BMS Logistics</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Trilha de navegacao">
-				<a href="index.html">Home</a>
+				<a href="{base}/pt">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Servicos</span>
 			</nav>
@@ -153,7 +157,7 @@
 				<h2>Precisa de um escopo sob medida em vez de um pacote logistico generico?</h2>
 				<p>A BMS Logistics pode estruturar um mix de servicos em torno do seu modelo real de entrega, das necessidades de armazem e da complexidade das rotas.</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Solicitar escopo de servico</a>
+			<a class="button button--accent" href="{base}/pt/contact">Solicitar escopo de servico</a>
 		</div>
 	</div>
 </section>

@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Operacoes | Hubs, armazenagem e execucao da BMS Logistics</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Trilha de navegacao">
-				<a href="index.html">Home</a>
+				<a href="{base}/pt">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Operacoes</span>
 			</nav>
@@ -169,7 +173,7 @@
 				<h2>Precisa de apoio logistico conectado a infraestrutura operacional real?</h2>
 				<p>Converse com a BMS Logistics sobre armazenagem, transporte ou entregas e construa uma estrutura ao redor do seu fluxo real.</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Falar com operacoes</a>
+			<a class="button button--accent" href="{base}/pt/contact">Falar com operacoes</a>
 		</div>
 	</div>
 </section>

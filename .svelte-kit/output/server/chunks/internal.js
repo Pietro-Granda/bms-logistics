@@ -31,7 +31,7 @@ const options = {
   service_worker_options: void 0,
   server_error_boundaries: false,
   templates: {
-    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\n<html lang="it">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<link rel="icon" type="image/jpeg" href="' + assets + '/assets/images/bms-logo.jpeg" />\n		<link rel="stylesheet" href="' + assets + '/assets/css/style.css" />\n		' + head + '\n	</head>\n	<body>\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n\n",
+    app: ({ head, body, assets, nonce, env }) => '<!doctype html>\r\n<html lang="it">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\r\n		<link rel="icon" type="image/jpeg" href="' + assets + '/assets/images/bms-logo.jpeg" />\r\n		<link rel="stylesheet" href="' + assets + '/assets/css/style.css" />\r\n		' + head + '\r\n	</head>\r\n	<body>\r\n		<div style="display: contents">' + body + "</div>\r\n	</body>\r\n</html>\r\n\r\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -103,7 +103,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1153jcl"
+  version_hash: "17mtrf9"
 };
 async function get_hooks() {
   let handle;

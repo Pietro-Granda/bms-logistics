@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>Services | BMS Logistics Integrated Service Portfolio</title>
 	<meta
@@ -10,7 +14,7 @@
 	<div class="container hero-grid">
 		<div data-reveal>
 			<nav class="breadcrumbs" aria-label="Breadcrumb">
-				<a href="index.html">Home</a>
+				<a href="{base}/en">Home</a>
 				<span class="separator" aria-hidden="true"></span>
 				<span>Services</span>
 			</nav>
@@ -154,7 +158,7 @@
 				<h2>Need a tailored service scope instead of a generic logistics package?</h2>
 				<p>BMS Logistics can structure a service mix around your actual delivery model, warehouse needs and routing complexity.</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Request a Service Scope</a>
+			<a class="button button--accent" href="{base}/en/contact">Request a Service Scope</a>
 		</div>
 	</div>
 </section>

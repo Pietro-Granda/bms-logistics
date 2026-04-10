@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+</script>
+
 <svelte:head>
 	<title>BMS Logistics | Integrated Transport, Warehousing and Last Mile</title>
 	<meta
@@ -16,8 +20,8 @@
 				helping brands and distributors move faster with more structure and less friction.
 			</p>
 			<div class="hero-actions">
-				<a class="button button--accent" href="contact.html">Request a Quote</a>
-				<a class="button button--ghost" href="operations.html">See Operations</a>
+				<a class="button button--accent" href="{base}/en/contact">Request a Quote</a>
+				<a class="button button--ghost" href="{base}/en/operations">See Operations</a>
 			</div>
 			<ul class="hero-tags" aria-label="Core strengths">
 				<li>Monza and Bernate hubs</li>
@@ -145,7 +149,7 @@
 		</div>
 
 		<div class="section-actions" data-reveal>
-			<a class="button" href="services.html">Explore All Services</a>
+			<a class="button" href="{base}/en/services">Explore All Services</a>
 		</div>
 	</div>
 </section>
@@ -255,7 +259,7 @@
 					operational model for your business.
 				</p>
 			</div>
-			<a class="button button--accent" href="contact.html">Start the Conversation</a>
+			<a class="button button--accent" href="{base}/en/contact">Start the Conversation</a>
 		</div>
 	</div>
 </section>
