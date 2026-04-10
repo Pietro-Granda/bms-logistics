@@ -1,8 +1,18 @@
-import { h as head, b as attr, s as stringify } from "../../chunks/root.js";
-import { R as Reveal } from "../../chunks/Reveal.js";
+import { a as attr_class, h as slot, i as head, b as attr, s as stringify } from "../../chunks/root.js";
+import { o as onDestroy } from "../../chunks/index-server.js";
 import { b as base } from "../../chunks/server.js";
 import "../../chunks/url.js";
 import "@sveltejs/kit/internal/server";
+function Reveal($$renderer, $$props) {
+  $$renderer.component(($$renderer2) => {
+    let visible = false;
+    let observer;
+    onDestroy(() => observer?.disconnect());
+    $$renderer2.push(`<div data-reveal=""${attr_class("", void 0, { "is-visible": visible })}><!--[-->`);
+    slot($$renderer2, $$props, "default", {});
+    $$renderer2.push(`<!--]--></div>`);
+  });
+}
 function _page($$renderer) {
   head("1uha8ag", $$renderer, ($$renderer2) => {
     $$renderer2.title(($$renderer3) => {

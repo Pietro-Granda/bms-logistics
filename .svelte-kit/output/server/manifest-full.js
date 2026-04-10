@@ -10,7 +10,7 @@ return {
 	assets: new Set(["assets/css/style.css","assets/images/bms-logo.jpeg","assets/js/main.js"]),
 	mimeTypes: {".css":"text/css",".jpeg":"image/jpeg",".js":"text/javascript"},
 	_: {
-		client: {start:"_app/immutable/entry/start.CqDkzNqy.js",app:"_app/immutable/entry/app.DsleMqUT.js",imports:["_app/immutable/entry/start.CqDkzNqy.js","_app/immutable/chunks/CP24cHrs.js","_app/immutable/chunks/DLNQzOI8.js","_app/immutable/chunks/BadkUb80.js","_app/immutable/entry/app.DsleMqUT.js","_app/immutable/chunks/DLNQzOI8.js","_app/immutable/chunks/Bzak7iHL.js","_app/immutable/chunks/DXESjpyK.js","_app/immutable/chunks/C7dfRdk_.js","_app/immutable/chunks/CLpD8Wj_.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BsLy5YyN.js",app:"_app/immutable/entry/app.uonvG5ln.js",imports:["_app/immutable/entry/start.BsLy5YyN.js","_app/immutable/chunks/rYHfybcS.js","_app/immutable/chunks/BPXR73E3.js","_app/immutable/chunks/B93q5soz.js","_app/immutable/entry/app.uonvG5ln.js","_app/immutable/chunks/BPXR73E3.js","_app/immutable/chunks/Bzak7iHL.js","_app/immutable/chunks/BEYggFEJ.js","_app/immutable/chunks/DW-62CI4.js","_app/immutable/chunks/B_5hj7G0.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
@@ -18,22 +18,7 @@ return {
 			__memo(() => import('./nodes/3.js')),
 			__memo(() => import('./nodes/4.js')),
 			__memo(() => import('./nodes/5.js')),
-			__memo(() => import('./nodes/6.js')),
-			__memo(() => import('./nodes/7.js')),
-			__memo(() => import('./nodes/8.js')),
-			__memo(() => import('./nodes/9.js')),
-			__memo(() => import('./nodes/10.js')),
-			__memo(() => import('./nodes/11.js')),
-			__memo(() => import('./nodes/12.js')),
-			__memo(() => import('./nodes/13.js')),
-			__memo(() => import('./nodes/14.js')),
-			__memo(() => import('./nodes/15.js')),
-			__memo(() => import('./nodes/16.js')),
-			__memo(() => import('./nodes/17.js')),
-			__memo(() => import('./nodes/18.js')),
-			__memo(() => import('./nodes/19.js')),
-			__memo(() => import('./nodes/20.js')),
-			__memo(() => import('./nodes/21.js'))
+			__memo(() => import('./nodes/6.js'))
 		],
 		remotes: {
 			
@@ -54,129 +39,24 @@ return {
 				endpoint: null
 			},
 			{
-				id: "/en/about",
-				pattern: /^\/en\/about\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 4 },
-				endpoint: null
-			},
-			{
-				id: "/en/contact",
-				pattern: /^\/en\/contact\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 5 },
-				endpoint: null
-			},
-			{
-				id: "/en/operations",
-				pattern: /^\/en\/operations\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 6 },
-				endpoint: null
-			},
-			{
-				id: "/en/services",
-				pattern: /^\/en\/services\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 7 },
-				endpoint: null
-			},
-			{
-				id: "/en/solutions",
-				pattern: /^\/en\/solutions\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 8 },
-				endpoint: null
-			},
-			{
 				id: "/it",
 				pattern: /^\/it\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 9 },
-				endpoint: null
-			},
-			{
-				id: "/it/about",
-				pattern: /^\/it\/about\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 10 },
-				endpoint: null
-			},
-			{
-				id: "/it/contact",
-				pattern: /^\/it\/contact\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 11 },
-				endpoint: null
-			},
-			{
-				id: "/it/operations",
-				pattern: /^\/it\/operations\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 12 },
-				endpoint: null
-			},
-			{
-				id: "/it/services",
-				pattern: /^\/it\/services\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 13 },
-				endpoint: null
-			},
-			{
-				id: "/it/solutions",
-				pattern: /^\/it\/solutions\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 14 },
+				page: { layouts: [0,], errors: [1,], leaf: 4 },
 				endpoint: null
 			},
 			{
 				id: "/pt",
 				pattern: /^\/pt\/?$/,
 				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 15 },
-				endpoint: null
-			},
-			{
-				id: "/pt/about",
-				pattern: /^\/pt\/about\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 16 },
-				endpoint: null
-			},
-			{
-				id: "/pt/contact",
-				pattern: /^\/pt\/contact\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 17 },
-				endpoint: null
-			},
-			{
-				id: "/pt/operations",
-				pattern: /^\/pt\/operations\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 18 },
-				endpoint: null
-			},
-			{
-				id: "/pt/services",
-				pattern: /^\/pt\/services\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 19 },
-				endpoint: null
-			},
-			{
-				id: "/pt/solutions",
-				pattern: /^\/pt\/solutions\/?$/,
-				params: [],
-				page: { layouts: [0,], errors: [1,], leaf: 20 },
+				page: { layouts: [0,], errors: [1,], leaf: 5 },
 				endpoint: null
 			},
 			{
 				id: "/[...legacy]",
 				pattern: /^(?:\/([^]*))?\/?$/,
 				params: [{"name":"legacy","optional":false,"rest":true,"chained":true}],
-				page: { layouts: [0,], errors: [1,], leaf: 21 },
+				page: { layouts: [0,], errors: [1,], leaf: 6 },
 				endpoint: null
 			}
 		],

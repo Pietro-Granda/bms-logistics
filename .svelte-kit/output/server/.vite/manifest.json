@@ -11,21 +11,6 @@
       "_internal.js"
     ]
   },
-  "_ContactForm.js": {
-    "file": "chunks/ContactForm.js",
-    "name": "ContactForm",
-    "imports": [
-      "_root.js"
-    ]
-  },
-  "_Reveal.js": {
-    "file": "chunks/Reveal.js",
-    "name": "Reveal",
-    "imports": [
-      "_root.js",
-      "_index-server.js"
-    ]
-  },
   "_client.js": {
     "file": "chunks/client.js",
     "name": "client",
@@ -187,7 +172,7 @@
     "isEntry": true,
     "imports": [
       "_root.js",
-      "_Reveal.js",
+      "_index-server.js",
       "_server.js",
       "_url.js"
     ]
@@ -223,62 +208,6 @@
       "_url.js"
     ]
   },
-  "src/routes/en/about/+page.svelte": {
-    "file": "entries/pages/en/about/_page.svelte.js",
-    "name": "entries/pages/en/about/_page.svelte",
-    "src": "src/routes/en/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/en/contact/+page.svelte": {
-    "file": "entries/pages/en/contact/_page.svelte.js",
-    "name": "entries/pages/en/contact/_page.svelte",
-    "src": "src/routes/en/contact/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_ContactForm.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/en/operations/+page.svelte": {
-    "file": "entries/pages/en/operations/_page.svelte.js",
-    "name": "entries/pages/en/operations/_page.svelte",
-    "src": "src/routes/en/operations/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/en/services/+page.svelte": {
-    "file": "entries/pages/en/services/_page.svelte.js",
-    "name": "entries/pages/en/services/_page.svelte",
-    "src": "src/routes/en/services/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/en/solutions/+page.svelte": {
-    "file": "entries/pages/en/solutions/_page.svelte.js",
-    "name": "entries/pages/en/solutions/_page.svelte",
-    "src": "src/routes/en/solutions/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
   "src/routes/it/+page.svelte": {
     "file": "entries/pages/it/_page.svelte.js",
     "name": "entries/pages/it/_page.svelte",
@@ -292,126 +221,10 @@
       "_state.svelte.js"
     ]
   },
-  "src/routes/it/about/+page.svelte": {
-    "file": "entries/pages/it/about/_page.svelte.js",
-    "name": "entries/pages/it/about/_page.svelte",
-    "src": "src/routes/it/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/it/contact/+page.svelte": {
-    "file": "entries/pages/it/contact/_page.svelte.js",
-    "name": "entries/pages/it/contact/_page.svelte",
-    "src": "src/routes/it/contact/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_Reveal.js",
-      "_ContactForm.js",
-      "_server.js",
-      "_url.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.3zY7V8rv.css"
-    ]
-  },
-  "src/routes/it/operations/+page.svelte": {
-    "file": "entries/pages/it/operations/_page.svelte.js",
-    "name": "entries/pages/it/operations/_page.svelte",
-    "src": "src/routes/it/operations/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/it/services/+page.svelte": {
-    "file": "entries/pages/it/services/_page.svelte.js",
-    "name": "entries/pages/it/services/_page.svelte",
-    "src": "src/routes/it/services/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/it/solutions/+page.svelte": {
-    "file": "entries/pages/it/solutions/_page.svelte.js",
-    "name": "entries/pages/it/solutions/_page.svelte",
-    "src": "src/routes/it/solutions/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
   "src/routes/pt/+page.svelte": {
     "file": "entries/pages/pt/_page.svelte.js",
     "name": "entries/pages/pt/_page.svelte",
     "src": "src/routes/pt/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/pt/about/+page.svelte": {
-    "file": "entries/pages/pt/about/_page.svelte.js",
-    "name": "entries/pages/pt/about/_page.svelte",
-    "src": "src/routes/pt/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/pt/contact/+page.svelte": {
-    "file": "entries/pages/pt/contact/_page.svelte.js",
-    "name": "entries/pages/pt/contact/_page.svelte",
-    "src": "src/routes/pt/contact/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_ContactForm.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/pt/operations/+page.svelte": {
-    "file": "entries/pages/pt/operations/_page.svelte.js",
-    "name": "entries/pages/pt/operations/_page.svelte",
-    "src": "src/routes/pt/operations/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/pt/services/+page.svelte": {
-    "file": "entries/pages/pt/services/_page.svelte.js",
-    "name": "entries/pages/pt/services/_page.svelte",
-    "src": "src/routes/pt/services/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_root.js",
-      "_server.js",
-      "_url.js"
-    ]
-  },
-  "src/routes/pt/solutions/+page.svelte": {
-    "file": "entries/pages/pt/solutions/_page.svelte.js",
-    "name": "entries/pages/pt/solutions/_page.svelte",
-    "src": "src/routes/pt/solutions/+page.svelte",
     "isEntry": true,
     "imports": [
       "_root.js",

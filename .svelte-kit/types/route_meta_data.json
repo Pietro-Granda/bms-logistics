@@ -6,55 +6,10 @@
 	"/en": [
 		"src/routes/+layout.ts"
 	],
-	"/en/about": [
-		"src/routes/+layout.ts"
-	],
-	"/en/contact": [
-		"src/routes/+layout.ts"
-	],
-	"/en/operations": [
-		"src/routes/+layout.ts"
-	],
-	"/en/services": [
-		"src/routes/+layout.ts"
-	],
-	"/en/solutions": [
-		"src/routes/+layout.ts"
-	],
 	"/it": [
 		"src/routes/+layout.ts"
 	],
-	"/it/about": [
-		"src/routes/+layout.ts"
-	],
-	"/it/contact": [
-		"src/routes/+layout.ts"
-	],
-	"/it/operations": [
-		"src/routes/+layout.ts"
-	],
-	"/it/services": [
-		"src/routes/+layout.ts"
-	],
-	"/it/solutions": [
-		"src/routes/+layout.ts"
-	],
 	"/pt": [
-		"src/routes/+layout.ts"
-	],
-	"/pt/about": [
-		"src/routes/+layout.ts"
-	],
-	"/pt/contact": [
-		"src/routes/+layout.ts"
-	],
-	"/pt/operations": [
-		"src/routes/+layout.ts"
-	],
-	"/pt/services": [
-		"src/routes/+layout.ts"
-	],
-	"/pt/solutions": [
 		"src/routes/+layout.ts"
 	],
 	"/[...legacy]": [
